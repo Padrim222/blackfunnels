@@ -1,23 +1,15 @@
 import { Navigation } from "@/components/Navigation";
-import { DashboardStats } from "@/components/DashboardStats";
-import { SalesChart } from "@/components/SalesChart";
-import { InvoiceStats } from "@/components/InvoiceStats";
-import { OrdersTable } from "@/components/OrdersTable";
+import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#f8f9fa]">
+    <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="px-4 sm:px-6 lg:px-8 py-8 mt-16">
-        <div className="max-w-7xl mx-auto space-y-8">
-          <DashboardStats />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <SalesChart />
-            <InvoiceStats />
-          </div>
-          <OrdersTable />
-        </div>
-      </main>
+      <Hero />
+      <Features />
+      <Footer />
     </div>
   );
 };
