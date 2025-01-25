@@ -10,6 +10,7 @@ import { Results } from "@/components/Results";
 import { Integration } from "@/components/Integration";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { FloatingButton } from "@/components/FloatingButton";
+import { Roadmap } from "@/components/Roadmap";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <Results />
       <Experts />
       <Integration />
+      <Roadmap />
       <ComparisonTable />
       <Pricing />
       <FAQ />
