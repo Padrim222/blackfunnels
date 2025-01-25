@@ -1,5 +1,4 @@
 import { Mail, Users, BarChart, Layout, Bot, Zap, Globe, Filter, MessageSquare, Network, PenTool, LineChart } from "lucide-react";
-import { TrialButton } from "./TrialButton";
 
 const features = [
   {
@@ -24,7 +23,7 @@ const features = [
   },
   {
     icon: Bot,
-    title: "I.A",
+    title: "A.I",
     description: "Ganhe força e eficiência utilizando a inteligência artificial integrada ao seu negócio",
   },
   {
@@ -66,29 +65,26 @@ const features = [
 
 export const Features = () => {
   return (
-    <div id="features" className="bg-background py-24 scroll-mt-20" role="region" aria-label="Funcionalidades">
+    <div className="bg-background py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             DIFERENTE DE TUDO O QUE VOCÊ JÁ VIU
           </h2>
           <p className="text-xl text-foreground mb-4">
             Nós te entregamos tudo o que você precisa para ter sucesso online
           </p>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground">
             Agora você precisa apenas de 1⚡️ ferramenta
           </p>
-          <TrialButton />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg border border-muted hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-              role="article"
+              className="p-6 rounded-lg border border-muted hover:border-primary/50 transition-colors"
             >
-              <feature.icon className="h-12 w-12 text-primary mb-4 transform transition-all duration-300 group-hover:scale-110" />
+              <feature.icon className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold text-foreground mb-2">
                 {feature.title}
               </h3>

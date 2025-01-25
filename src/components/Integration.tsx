@@ -1,5 +1,4 @@
 import { Check } from "lucide-react";
-import { TrialButton } from "./TrialButton";
 
 export const Integration = () => {
   const integrations = [
@@ -14,16 +13,15 @@ export const Integration = () => {
   ];
 
   return (
-    <div id="integration" className="bg-black py-24">
+    <div className="bg-black py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Integre com suas ferramentas favoritas
           </h2>
-          <p className="text-xl text-gray-400 mb-8">
+          <p className="text-xl text-gray-400">
             Conecte-se com as principais plataformas do mercado
           </p>
-          <TrialButton />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {integrations.map((integration, index) => (

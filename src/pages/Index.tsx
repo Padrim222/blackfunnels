@@ -6,11 +6,10 @@ import { Experts } from "@/components/Experts";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { Testimonials } from "@/components/Testimonials";
 import { Results } from "@/components/Results";
 import { Integration } from "@/components/Integration";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { FloatingButton } from "@/components/FloatingButton";
-import { Roadmap } from "@/components/Roadmap";
 
 const Index = () => {
   return (
@@ -22,12 +21,11 @@ const Index = () => {
       <Results />
       <Experts />
       <Integration />
-      <Roadmap />
       <ComparisonTable />
+      <Testimonials />
       <Pricing />
       <FAQ />
       <Footer />
-      <FloatingButton />
     </div>
   );
 };
