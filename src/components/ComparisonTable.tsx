@@ -13,9 +13,7 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$500 mensal",
     included: true,
     icons: [
-      "/lovable-uploads/7030ba35-8e22-4c0a-aa2b-fc4ea205c434.png",
-      "/lovable-uploads/28a9176b-4ec2-4ebc-a099-02cf31fd15d0.png",
-      "/lovable-uploads/54ef9865-c32d-4e65-af53-1525d43d6b16.png"
+      "/lovable-uploads/5a602589-e27c-4c82-b77b-564654c4fe08.png"
     ]
   },
   {
@@ -23,8 +21,7 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$1.500 mensal",
     included: true,
     icons: [
-      "/lovable-uploads/a2909eb1-dd42-4bc7-883a-8ec27b9e4a5e.png",
-      "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
+      "/lovable-uploads/bfc75f19-fa44-4376-8454-75a7b12d9dc1.png"
     ]
   },
   {
@@ -32,9 +29,7 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$100 mensal",
     included: true,
     icons: [
-      "/lovable-uploads/c4ba33d2-2d8e-4316-ac79-cd106883a89f.png",
-      "/lovable-uploads/5496a1eb-51be-4a6f-97c2-550feeeb2ea4.png",
-      "/lovable-uploads/815bde0d-f864-42c1-a611-95243572c744.png"
+      "/lovable-uploads/8e597996-2bcc-4e7e-88d5-812eb0ae81e4.png"
     ]
   },
   {
@@ -42,8 +37,7 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$250 mensal",
     included: true,
     icons: [
-      "/lovable-uploads/795ebb0c-a3e8-4158-8694-ec2ae45e1482.png",
-      "/lovable-uploads/4156b37e-86eb-4551-8bf4-94a3838bc849.png"
+      "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     ]
   },
   {
@@ -51,9 +45,7 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$500 mensal",
     included: true,
     icons: [
-      "/lovable-uploads/70a6b443-6e50-4343-89ee-ff26778f5bf1.png",
-      "/lovable-uploads/5900fcc5-6ba3-4c38-b332-0ecaa0d50fb3.png",
-      "/lovable-uploads/78b85340-1089-428a-b31b-44f7831c6759.png"
+      "/lovable-uploads/b283606b-80cb-46d7-945d-45beeaea5bea.png"
     ]
   },
   {
@@ -180,7 +172,7 @@ export const ComparisonTable = () => {
                           key={iconIndex}
                           src={icon}
                           alt={`${item.feature} platform ${iconIndex + 1}`}
-                          className="w-8 h-8 object-contain"
+                          className="w-8 h-8 object-contain bg-white rounded-full p-1"
                         />
                       ))}
                     </div>
