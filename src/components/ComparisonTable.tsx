@@ -170,22 +170,27 @@ export const ComparisonTable = () => {
 
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-white mb-8">Bônus para todos assinantes</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h4 className="text-3xl font-bold text-center mb-12">Seu negócio online em 4 semanas</h4>
+          <div className="grid grid-cols-1 gap-8">
             {bonusContent.map((week, index) => (
-              <Card key={index} className="bg-black/50">
-                <CardContent className="p-6">
-                  <h4 className="text-primary font-semibold mb-2">{week.week}</h4>
-                  <h5 className="text-white font-bold mb-4">{week.title}</h5>
-                  <ul className="space-y-2">
-                    {week.topics.map((topic, topicIndex) => (
-                      <li key={topicIndex} className="text-gray-300 text-sm flex items-start gap-2">
-                        <Check className="text-primary h-4 w-4 mt-1 flex-shrink-0" />
-                        <span>{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+              <div key={index} className="flex flex-col md:flex-row items-start gap-8">
+                <div className="w-full md:w-1/4">
+                  <h5 className="text-primary text-2xl font-bold">{week.week}</h5>
+                  <p className="text-white text-xl">{week.title}</p>
+                </div>
+                <Card className="w-full md:w-3/4 bg-secondary/20 border-secondary">
+                  <CardContent className="p-6">
+                    <ul className="space-y-3">
+                      {week.topics.map((topic, topicIndex) => (
+                        <li key={topicIndex} className="text-white text-sm flex items-start gap-2">
+                          <Check className="text-primary h-4 w-4 mt-1 flex-shrink-0" />
+                          <span>{topic}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
