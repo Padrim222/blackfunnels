@@ -6,10 +6,11 @@ export const Hero = () => {
       className="relative bg-black pt-20" 
       role="banner"
       style={{
-        backgroundImage: "url('/lovable-uploads/5b35da98-2a4c-4d95-a041-c390af18e09a.png')",
+        backgroundImage: "url('/lovable-uploads/a496932e-c280-4501-955e-7df0f16ed56f.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        opacity: "0.75"
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
