@@ -4,6 +4,7 @@ type ComparisonItem = {
   feature: string;
   otherPrice: string;
   included: boolean;
+  icon?: string;
 };
 
 const comparisonItems: ComparisonItem[] = [
@@ -11,46 +12,55 @@ const comparisonItems: ComparisonItem[] = [
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$500 mensal",
     included: true,
+    icon: "/lovable-uploads/7030ba35-8e22-4c0a-aa2b-fc4ea205c434.png"
   },
   {
     feature: "Funil de vendas ilimitados",
     otherPrice: "R$1.500 mensal",
     included: true,
+    icon: "/lovable-uploads/a2909eb1-dd42-4bc7-883a-8ec27b9e4a5e.png"
   },
   {
     feature: "Construtor de website",
     otherPrice: "R$100 mensal",
     included: true,
+    icon: "/lovable-uploads/c4ba33d2-2d8e-4316-ac79-cd106883a89f.png"
   },
   {
     feature: "Pesquisas e Formulários",
     otherPrice: "R$250 mensal",
     included: true,
+    icon: "/lovable-uploads/795ebb0c-a3e8-4158-8694-ec2ae45e1482.png"
   },
   {
     feature: "E-mail Marketing",
     otherPrice: "R$500 mensal",
     included: true,
+    icon: "/lovable-uploads/70a6b443-6e50-4343-89ee-ff26778f5bf1.png"
   },
   {
     feature: "Chat SMS Marketing",
     otherPrice: "R$500 mensal",
     included: true,
+    icon: "/lovable-uploads/6b929334-829d-4192-adfd-380248388150.png"
   },
   {
     feature: "Reservas e agendamentos",
     otherPrice: "R$150 mensal",
     included: true,
+    icon: "/lovable-uploads/9d94908a-5c76-4e6e-8110-ad21e49f15e0.png"
   },
   {
     feature: "Automações e fluxos",
     otherPrice: "R$500 mensal",
     included: true,
+    icon: "/lovable-uploads/aaddb179-cf16-4773-b7bb-b0783e964d9e.png"
   },
   {
     feature: "Cursos e Produtos",
     otherPrice: "Taxas, transação e hospedagem",
     included: true,
+    icon: "/lovable-uploads/e2b0f476-2cab-4166-a847-9c42790f420c.png"
   },
   {
     feature: "Discador e Rastreamento de chamada",
@@ -110,7 +120,18 @@ export const ComparisonTable = () => {
                   key={index}
                   className="border-b border-muted hover:bg-muted/5"
                 >
-                  <td className="py-4 text-foreground">{item.feature}</td>
+                  <td className="py-4 text-foreground">
+                    <div className="flex items-center gap-4">
+                      {item.icon && (
+                        <img 
+                          src={item.icon} 
+                          alt={item.feature}
+                          className="w-8 h-8 object-contain"
+                        />
+                      )}
+                      {item.feature}
+                    </div>
+                  </td>
                   <td className="py-4 text-foreground">{item.otherPrice}</td>
                   <td className="py-4 text-center">
                     {item.included && (
