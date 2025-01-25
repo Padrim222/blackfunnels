@@ -15,7 +15,7 @@ const weeks = [
   },
   {
     week: "Semana 2",
-    title: "A máquina de "leads infinitos"",
+    title: 'A máquina de "leads infinitos"',
     subtitle: "Funil de Isca",
     items: [
       "A estratégia de isca",
@@ -26,7 +26,7 @@ const weeks = [
   },
   {
     week: "Semana 3",
-    title: "O funil de "vendas automáticas"",
+    title: 'O funil de "vendas automáticas"',
     subtitle: "Funil de Vendas",
     items: [
       "Aprenda a criar ofertas irresistíveis de alta conversão",
