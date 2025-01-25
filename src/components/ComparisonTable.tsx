@@ -56,13 +56,13 @@ const features: Feature[] = [
     }
   },
   {
-    feature: "Assinatura de Documentos",
-    otherPrice: "R$197/mês",
+    feature: "Reservas e agendamentos",
+    otherPrice: "R$297/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
-      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
-      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
+      google: "/lovable-uploads/438fe618-00f5-4235-a314-21baeba03e43.png",
+      meta: "/lovable-uploads/e26b3767-181c-4d8e-9561-5a4908a51a03.png",
+      other: "/lovable-uploads/b625acfb-7a62-4d7c-8187-1acb598e0566.png"
     }
   },
   {
