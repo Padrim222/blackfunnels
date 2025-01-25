@@ -32,7 +32,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Construtor de website",
     otherPrice: "R$100 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/a911b0af-fcee-4e78-92ce-3992ed4c9e3e.png",
+      "/lovable-uploads/378d9586-9488-43f6-a8e3-38f52333aaf2.png",
+      "/lovable-uploads/0f722ef4-2f67-48e7-ab34-9848b11db44a.png"
+    ]
   },
   {
     feature: "Pesquisas e Formulários",
