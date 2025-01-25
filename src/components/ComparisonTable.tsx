@@ -42,7 +42,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Pesquisas e Formulários",
     otherPrice: "R$250 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/1a0d8b14-dcc2-47eb-bc52-8983dd5e2773.png",
+      "/lovable-uploads/8b96e739-c65d-4cdb-a107-5ab8cef3077a.png",
+      "/lovable-uploads/6b93378b-9696-4ab5-b687-42daa6706969.png"
+    ]
   },
   {
     feature: "E-mail Marketing",
