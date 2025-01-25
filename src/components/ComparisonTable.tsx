@@ -5,6 +5,11 @@ interface Feature {
   feature: string;
   otherPrice: string;
   included: boolean;
+  platforms: {
+    google: boolean;
+    meta: boolean;
+    other: boolean;
+  };
 }
 
 const features: Feature[] = [
@@ -12,46 +17,91 @@ const features: Feature[] = [
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$597/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Funil de vendas",
     otherPrice: "R$1.897/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Construtor de website",
     otherPrice: "R$147/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Pesquisas e Formulários",
     otherPrice: "R$297/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "E-mail Marketing",
     otherPrice: "R$647/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Chat SMS Marketing",
     otherPrice: "R$547/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Reservas e agendamentos",
     otherPrice: "R$197/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Automações e fluxos",
     otherPrice: "R$597/mês",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Cursos e Produtos",
     otherPrice: "Taxas e transações",
     included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
 ];
 
@@ -88,15 +138,21 @@ export const ComparisonTable = () => {
                   {feature.feature}
                 </div>
                 <div className="flex justify-center space-x-3">
-                  <div className="w-10 h-10 bg-[#4285F4] rounded-full flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                  </div>
-                  <div className="w-10 h-10 bg-[#FF5722] rounded-full flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                  </div>
-                  <div className="w-10 h-10 bg-[#E0E0E0] rounded-full flex items-center justify-center">
-                    <div className="w-6 h-6 bg-black/20 rounded-full"></div>
-                  </div>
+                  {feature.platforms.google && (
+                    <div className="w-10 h-10 bg-[#4285F4] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                    </div>
+                  )}
+                  {feature.platforms.meta && (
+                    <div className="w-10 h-10 bg-[#FF5722] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                    </div>
+                  )}
+                  {feature.platforms.other && (
+                    <div className="w-10 h-10 bg-[#E0E0E0] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-black/20 rounded-full"></div>
+                    </div>
+                  )}
                 </div>
                 <div className="text-lg text-gray-300">
                   {feature.otherPrice}
