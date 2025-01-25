@@ -1,20 +1,20 @@
 export const Experts = () => {
   const experts = [
     {
-      name: "Russell Brunson",
-      title: "Funil Linchpin",
+      name: "Pablo Marçal",
+      title: "Funil Perpétuo",
       description: "Com certeza o maior Gênio do Marketing Digital no mundo, empresário serial e autor da principal trilogia de marketing.",
       image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
     },
     {
-      name: "Grant Cardone",
-      title: "Funil de Webinário",
+      name: "Ed Cred",
+      title: "Funis Black",
       description: "Empresário, autor e palestrante. Ele é o fundador da Cardone Enterprises e criador do movimento 10x.",
       image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
     },
     {
-      name: "Pedro Adao",
-      title: "Funil de Desafio",
+      name: "Pedro Sobral",
+      title: "Funis de Desafio",
       description: "Pioneiro no modelo de desafios pagos e gratuitos que geraram mais de $100 milhões de dólares. Autor de best-seller e fundador de diversas empresas.",
       image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
     }
