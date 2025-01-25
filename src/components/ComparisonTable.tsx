@@ -16,13 +16,13 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    feature: "Chat",
-    otherPrice: "R$547/mês",
+    feature: "Chat SMS Marketing",
+    otherPrice: "R$397/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
-      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
-      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
+      google: "/lovable-uploads/ff3b2720-5979-4ff5-b11e-843735f1f31c.png",
+      meta: "/lovable-uploads/edfcccc8-9093-4421-88a1-7f9d48f5d731.png",
+      other: "/lovable-uploads/2b1f0da2-9ea7-4bf2-9c5c-7ef619786d43.png"
     }
   },
   {
