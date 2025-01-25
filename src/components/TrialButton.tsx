@@ -18,7 +18,7 @@ export const TrialButton = () => {
       size="lg"
       className="bg-primary hover:bg-primary/90 text-lg transform transition-all duration-300 hover:scale-105"
     >
-      Começar Teste Grátis
+      Iniciar 14 dias grátis
       <ArrowRight className="ml-2 h-5 w-5" />
     </Button>
   );
