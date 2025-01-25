@@ -8,8 +8,8 @@ import {
 export const FAQ = () => {
   const faqs = [
     {
-      question: "Por que a funil.ai é diferente de outras plataformas?",
-      answer: "A funil.ai oferece uma solução completa e integrada, eliminando a necessidade de múltiplas ferramentas."
+      question: "Por que a Black Funnels é diferente de outras plataformas?",
+      answer: "A Black Funnels oferece uma solução completa e integrada, eliminando a necessidade de múltiplas ferramentas."
     },
     {
       question: "O que eu recebo quando me inscrevo no teste grátis?",
@@ -20,7 +20,7 @@ export const FAQ = () => {
       answer: "Nossa equipe de suporte está disponível 24/7 para ajudar você."
     },
     {
-      question: "O que é o Desafio Funil 6-7 dígitos?",
+      question: "O que é o Desafio Black Funnels 6-7 dígitos?",
       answer: "É um programa exclusivo que ensina como escalar seu negócio usando nossas ferramentas."
     }
   ];
