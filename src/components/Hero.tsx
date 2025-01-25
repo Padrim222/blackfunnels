@@ -10,15 +10,22 @@ export const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          opacity: "0.5"
+          opacity: "0.3"
         }}
       />
       <div 
         className="absolute inset-0"
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
-          opacity: '0.3'
+          background: `linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)`,
+          opacity: '0.1'
+        }}
+      />
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.3) 2px, transparent 0)`,
+          backgroundSize: '30px 30px',
+          opacity: '0.4'
         }}
       />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center z-10">
