@@ -37,6 +37,12 @@ export const Results = () => {
       highlight: true
     },
     {
+      quote: "297 TÁ BARATO, Eu tinha que abrir várias abas no meu navegador pra poder monitorar cada etapa do meu funil e garantir o ROI. fora os clientes de tráfego que hoje usam a plataforma também e assinam tudo por aqui, Top demais!",
+      author: "Diogo Kaleo",
+      role: "Agência 7F",
+      highlight: true
+    },
+    {
       quote: "Em apenas 3 meses, dobramos nossa base de clientes e reduzimos custos operacionais em 70%.",
       author: "Agência de Marketing",
       role: "Serviços Digitais"
