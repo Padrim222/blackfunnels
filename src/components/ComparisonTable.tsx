@@ -122,7 +122,9 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Trackeamento e Analytics",
     otherPrice: "R$250 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/fca49068-82b0-49d8-8ba3-9282b712c432.png"
+    ]
   },
   {
     feature: "Comunidade",
