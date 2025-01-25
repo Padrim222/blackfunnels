@@ -4,19 +4,19 @@ export const Testimonials = () => {
       name: "João Silva",
       role: "Empreendedor Digital",
       content: "A plataforma revolucionou meu negócio. Em apenas 3 meses, aumentei minhas vendas em 300%.",
-      image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
+      image: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png"
     },
     {
       name: "Maria Santos",
       role: "Coach",
       content: "Nunca foi tão fácil criar e vender meus produtos digitais. A funil.ai simplificou todo o processo.",
-      image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
+      image: "/lovable-uploads/90a30ac1-de7b-4b81-bba8-43c7e3186446.png"
     },
     {
       name: "Pedro Costa",
       role: "Infoprodutor",
       content: "A melhor decisão que tomei foi migrar para a funil.ai. O suporte é incrível e as ferramentas são completas.",
-      image: "/lovable-uploads/4676d708-2bd3-4af4-9589-a0a3072b950d.png"
+      image: "/lovable-uploads/894cc3fa-aeef-4449-8413-2139c75dac47.png"
     }
   ];
 
@@ -40,7 +40,7 @@ export const Testimonials = () => {
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-20 h-20 rounded-full mx-auto mb-4"
+                className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
               />
               <p className="text-gray-400 mb-4">{testimonial.content}</p>
               <h3 className="text-lg font-semibold text-white">{testimonial.name}</h3>
