@@ -2,7 +2,16 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="relative bg-black pt-20" role="banner">
+    <div 
+      className="relative bg-black pt-20" 
+      role="banner"
+      style={{
+        backgroundImage: "url('/lovable-uploads/5b35da98-2a4c-4d95-a041-c390af18e09a.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <h1 
           className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in"
