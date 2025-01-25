@@ -88,9 +88,7 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -101,6 +99,38 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Section Patterns */
+  .pattern-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+  }
+
+  .pattern-grid {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .pattern-diagonal {
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 50px
+      );
+  }
+
+  .pattern-waves {
+    background: 
+      radial-gradient(circle at 100% 50%, transparent 20%, rgba(255, 87, 10, 0.03) 21%, rgba(255, 87, 10, 0.03) 34%, transparent 35%, transparent),
+      radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 87, 10, 0.03) 21%, rgba(255, 87, 10, 0.03) 34%, transparent 35%, transparent) 0 -50px;
+    background-size: 75px 100px;
   }
 
   /* Improve focus styles for better accessibility */

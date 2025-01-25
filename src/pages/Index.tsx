@@ -17,15 +17,33 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <AffiliateBar />
       <Navigation />
-      <Hero />
-      <Features />
-      <Results />
-      <Experts />
-      <Integration />
-      <Roadmap />
-      <ComparisonTable />
-      <Pricing />
-      <FAQ />
+      <div className="pattern-dots">
+        <Hero />
+      </div>
+      <div className="pattern-grid">
+        <Features />
+      </div>
+      <div className="pattern-diagonal">
+        <Results />
+      </div>
+      <div className="pattern-waves">
+        <Experts />
+      </div>
+      <div className="pattern-grid">
+        <Integration />
+      </div>
+      <div className="pattern-diagonal">
+        <Roadmap />
+      </div>
+      <div className="pattern-dots">
+        <ComparisonTable />
+      </div>
+      <div className="pattern-waves">
+        <Pricing />
+      </div>
+      <div className="pattern-grid">
+        <FAQ />
+      </div>
       <Footer />
       <FloatingButton />
     </div>
