@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { Card } from "./ui/card";
 
 export const Pricing = () => {
   const plans = [
@@ -10,6 +11,7 @@ export const Pricing = () => {
       price: "R$247",
       period: "/mês",
       savings: "Cobrança anual (Economize R$ 594/ano)",
+      highlight: "Ideal para começar",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -44,8 +46,9 @@ export const Pricing = () => {
         "BootCamp Funil 6-7 dígitos",
         "BootCamp SMMA 100k",
         "Comunidade",
-        "Onboarding"
-      ]
+        "Onboarding Básico"
+      ],
+      color: "border-gray-600"
     },
     {
       name: "PRO",
@@ -53,6 +56,7 @@ export const Pricing = () => {
       price: "R$414",
       period: "/mês",
       savings: "Cobrança anual (Economize R$ 994/ano)",
+      highlight: "Mais Popular",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -73,9 +77,9 @@ export const Pricing = () => {
         "CRM Ilimitado",
         "Analytics Ilimitado",
         "Templates Ilimitados",
-        "Teste A/B",
-        "Integrações",
-        "API"
+        "Teste A/B Premium",
+        "Integrações Avançadas",
+        "API com Suporte Prioritário"
       ],
       additionalFeatures: [
         "+ $0.0134 por SMS",
@@ -83,12 +87,13 @@ export const Pricing = () => {
         "+ $0.0011 por email",
         "+ $29 Whatsapp API Oficial",
         "+ $39 Whatsapp API não oficial (até 5 números)",
-        "$1 de Crédito",
+        "$5 de Crédito",
         "BootCamp Funil 6-7 dígitos",
         "BootCamp SMMA 100k",
-        "Comunidade",
-        "Onboarding"
-      ]
+        "Comunidade VIP",
+        "Onboarding Personalizado"
+      ],
+      color: "border-primary"
     },
     {
       name: "MASTER",
@@ -96,6 +101,7 @@ export const Pricing = () => {
       price: "R$580",
       period: "/mês",
       savings: "Cobrança anual (Economize R$ 994/ano)",
+      highlight: "Máximo Desempenho",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -116,9 +122,9 @@ export const Pricing = () => {
         "CRM Ilimitado",
         "Analytics Ilimitado",
         "Templates Ilimitados",
-        "Teste A/B",
-        "Integrações",
-        "API"
+        "Teste A/B Enterprise",
+        "Integrações Enterprise",
+        "API Dedicada"
       ],
       additionalFeatures: [
         "+ $0.0119 por SMS",
@@ -126,12 +132,13 @@ export const Pricing = () => {
         "+ $0.001 por email",
         "+ $29 Whatsapp API Oficial",
         "+ $39 Whatsapp API não oficial (até 5 números)",
-        "$1 de Crédito",
+        "$10 de Crédito",
         "BootCamp Funil 6-7 dígitos",
         "BootCamp SMMA 100k",
-        "Comunidade",
-        "Onboarding"
-      ]
+        "Comunidade Elite",
+        "Onboarding VIP com Consultor Dedicado"
+      ],
+      color: "border-secondary"
     }
   ];
 
@@ -151,24 +158,25 @@ export const Pricing = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div
+            <Card
               key={index}
-              className={`p-6 rounded-lg border ${
-                plan.name === "PRO"
-                  ? "border-primary bg-black/50"
-                  : "border-gray-800"
-              }`}
+              className={`p-6 rounded-lg border-2 ${plan.color} hover:scale-105 transition-transform duration-300`}
             >
+              <Badge variant="outline" className="mb-2">
+                {plan.highlight}
+              </Badge>
               <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-              <div className="text-gray-400 mb-2">
-                Normalmente {plan.originalPrice}
+              <div className="text-gray-400 mb-2 line-through">
+                {plan.originalPrice}
               </div>
               <div className="flex items-baseline mb-2">
                 <span className="text-4xl font-bold text-white">{plan.price}</span>
                 <span className="text-gray-400 ml-2">{plan.period}</span>
               </div>
               <p className="text-sm text-gray-400 mb-6">{plan.savings}</p>
-              <Button className="w-full mb-6">Iniciar teste grátis</Button>
+              <Button className="w-full mb-6 bg-primary hover:bg-primary/90">
+                Iniciar teste grátis
+              </Button>
               
               <div className="space-y-4">
                 {plan.features.map((feature, featureIndex) => (
@@ -188,17 +196,19 @@ export const Pricing = () => {
               </div>
               
               <div className="mt-6 pt-6 border-t border-gray-800">
-                <Button className="w-full">Iniciar teste grátis</Button>
+                <Button className="w-full bg-primary hover:bg-primary/90">
+                  Iniciar teste grátis
+                </Button>
                 <div className="mt-4 text-center">
                   <Badge variant="outline" className="bg-black/50">
-                    Limited Spots
+                    Vagas Limitadas
                   </Badge>
                   <p className="text-sm text-gray-400 mt-2">
-                    First 1000 user only
+                    Apenas para os primeiros 1000 usuários
                   </p>
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
