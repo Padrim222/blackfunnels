@@ -72,7 +72,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Reservas e agendamentos",
     otherPrice: "R$150 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/410600fc-4a54-47f9-9a09-b29271c31241.png",
+      "/lovable-uploads/468fc596-9761-4354-87ee-397fc8a54374.png",
+      "/lovable-uploads/839f5570-7b6d-4f18-87c5-a66afeac8e03.png"
+    ]
   },
   {
     feature: "Automações e fluxos",
