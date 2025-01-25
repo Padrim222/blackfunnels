@@ -14,6 +14,56 @@ interface Feature {
 
 const features: Feature[] = [
   {
+    feature: "Chat",
+    otherPrice: "R$547/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Gerenciamento de reputação",
+    otherPrice: "R$397/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Trackeamento Analytics",
+    otherPrice: "R$297/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Comunidade",
+    otherPrice: "R$497/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Assinatura de Documentos",
+    otherPrice: "R$197/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$597/mês",
     included: true,
@@ -52,57 +102,7 @@ const features: Feature[] = [
       meta: true,
       other: true
     }
-  },
-  {
-    feature: "E-mail Marketing",
-    otherPrice: "R$647/mês",
-    included: true,
-    platforms: {
-      google: true,
-      meta: true,
-      other: true
-    }
-  },
-  {
-    feature: "Chat SMS Marketing",
-    otherPrice: "R$547/mês",
-    included: true,
-    platforms: {
-      google: true,
-      meta: true,
-      other: true
-    }
-  },
-  {
-    feature: "Reservas e agendamentos",
-    otherPrice: "R$197/mês",
-    included: true,
-    platforms: {
-      google: true,
-      meta: true,
-      other: true
-    }
-  },
-  {
-    feature: "Automações e fluxos",
-    otherPrice: "R$597/mês",
-    included: true,
-    platforms: {
-      google: true,
-      meta: true,
-      other: true
-    }
-  },
-  {
-    feature: "Cursos e Produtos",
-    otherPrice: "Taxas e transações",
-    included: true,
-    platforms: {
-      google: true,
-      meta: true,
-      other: true
-    }
-  },
+  }
 ];
 
 export const ComparisonTable = () => {
