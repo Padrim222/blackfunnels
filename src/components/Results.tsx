@@ -43,14 +43,22 @@ export const Results = () => {
       highlight: true
     },
     {
-      quote: "Em apenas 3 meses, dobramos nossa base de clientes e reduzimos custos operacionais em 70%.",
-      author: "Agência de Marketing",
-      role: "Serviços Digitais"
+      quote: "A melhor decisão foi migrar todo meu negócio para a Black funnels. O suporte é excepcional!, aposentei até a kiwify e suas taxas absurdas",
+      author: "Henrique Pinheiro",
+      role: "Mentoria Online",
+      highlight: true
     },
     {
-      quote: "A melhor decisão que tomei foi migrar todo meu negócio para a funil.ai. O suporte é excepcional!",
-      author: "Coach de Negócios",
-      role: "Mentoria Online"
+      quote: "Nunca vi algo tão completo quanto, simplesmente revolucionários.",
+      author: "Pablo Jordan",
+      role: "Igaming expert",
+      highlight: true
+    },
+    {
+      quote: "Comecei meu lançamento de OB usando só a plataforma, de lá pra cá foram mais de 150k faturados em 42 dias, quero plaquinha hein kkkkkk!!.",
+      author: "Hector Conde",
+      role: "Curso Online / Opções Binárias",
+      highlight: true
     }
   ];
 
