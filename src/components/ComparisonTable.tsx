@@ -62,7 +62,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Chat SMS Marketing",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/894cc3fa-aeef-4449-8413-2139c75dac47.png",
+      "/lovable-uploads/81457613-3c2b-4c6d-bfff-1ad07969cf0c.png",
+      "/lovable-uploads/bbcb2288-2616-46ad-8e10-156a021e4c07.png"
+    ]
   },
   {
     feature: "Reservas e agendamentos",
