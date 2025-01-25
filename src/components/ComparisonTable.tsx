@@ -40,9 +40,9 @@ const features: Feature[] = [
     otherPrice: "R$497/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/78ed40ad-d420-439c-a0c4-f9a046f23521.png",
-      meta: "/lovable-uploads/76f17064-0dc6-4904-90ff-09efdf57e1da.png",
-      other: "/lovable-uploads/4defffa4-e1f8-4975-8ad8-827f977da26f.png"
+      google: "",
+      meta: "",
+      other: ""
     }
   },
   {
@@ -128,10 +128,8 @@ const features: Feature[] = [
 ];
 
 export const ComparisonTable = () => {
-  const totalOtherPrice = features.reduce((acc, feature) => {
-    const price = parseFloat(feature.otherPrice.replace('R$', '').replace('/mês', '').replace('.', '').replace(',', '.'));
-    return acc + price;
-  }, 0);
+  // Override the calculated total to use the fixed value of 6800
+  const totalOtherPrice = 6800;
 
   return (
     <div className="py-24 sm:py-32 pattern-diagonal">
