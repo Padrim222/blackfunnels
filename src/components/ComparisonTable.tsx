@@ -36,16 +36,6 @@ const features: Feature[] = [
     }
   },
   {
-    feature: "Comunidades e Forúns",
-    otherPrice: "R$497/mês",
-    included: true,
-    platforms: {
-      google: "",
-      meta: "",
-      other: ""
-    }
-  },
-  {
     feature: "Reservas e agendamentos",
     otherPrice: "R$297/mês",
     included: true,
