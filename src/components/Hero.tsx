@@ -5,7 +5,7 @@ export const Hero = () => {
     <div className="relative bg-black pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Transforme seu Negócio com <span className="text-primary">Black Funnels</span>
+          Tudo que você precisa, agora em <span className="text-primary">1 ferramenta</span>
         </h1>
         <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
           Foque no que você ama em vez de se preocupar com ferramentas e tecnologia. Tenha tudo que você precisa para ter sucesso online em um só lugar.
