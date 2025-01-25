@@ -112,7 +112,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Gerenciamento de reputação",
     otherPrice: "R$1.500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/8f58ba45-eb56-4ff7-8caa-254cc6fdeed0.png",
+      "/lovable-uploads/c8acc852-b674-4f0e-888c-381b4589a17d.png",
+      "/lovable-uploads/3d19d207-499a-4dbf-8faa-b948580f5abc.png"
+    ]
   },
   {
     feature: "Trackeamento e Analytics",
