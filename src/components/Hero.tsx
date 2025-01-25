@@ -2,18 +2,18 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div 
-      className="relative bg-black pt-20" 
-      role="banner"
-      style={{
-        backgroundImage: "url('/lovable-uploads/a496932e-c280-4501-955e-7df0f16ed56f.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        opacity: "0.5"
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
+    <div className="relative bg-black pt-20" role="banner">
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: "url('/lovable-uploads/a496932e-c280-4501-955e-7df0f16ed56f.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          opacity: "0.5"
+        }}
+      />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center z-10">
         <h1 
           className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in"
           aria-label="Tudo que você precisa, agora em uma ferramenta"
