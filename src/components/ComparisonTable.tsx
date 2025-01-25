@@ -90,6 +90,37 @@ export const ComparisonTable = () => {
             Economize tempo e dinheiro cancelando todas as outras ferramentas
           </p>
         </div>
+
+        <div className="mt-16">
+          <div className="grid grid-cols-4 gap-4 mb-8 text-lg font-semibold text-white border-b border-gray-700 pb-4">
+            <div>Features</div>
+            <div className="text-center">Replaces</div>
+            <div>Outra Ferramenta a partir de</div>
+            <div className="text-center">Incluído</div>
+          </div>
+
+          <div className="space-y-8">
+            {features.map((feature, index) => (
+              <div key={index} className="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-700">
+                <div className="text-lg font-semibold text-white">
+                  {feature.feature}
+                </div>
+                <div className="flex justify-center space-x-2">
+                  {/* Placeholder for tool logos - you can add actual logos here */}
+                  <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
+                  <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
+                </div>
+                <div className="text-gray-300">
+                  {feature.otherPrice}
+                </div>
+                <div className="flex justify-center">
+                  {feature.included && <Check className="text-primary h-6 w-6" />}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <Card className="ring-1 ring-white/10 rounded-3xl p-8 xl:p-10">
             <div className="flex items-center justify-between gap-x-4">
@@ -114,24 +145,6 @@ export const ComparisonTable = () => {
               <span className="text-sm font-semibold leading-6 text-gray-300">/mensal</span>
             </p>
           </Card>
-        </div>
-
-        <div className="mt-16 space-y-8">
-          {features.map((feature, index) => (
-            <div key={index} className="border-t border-gray-700 pt-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg font-semibold text-white">{feature.feature}</span>
-                  </div>
-                  <p className="mt-1 text-sm text-gray-300">{feature.otherPrice}</p>
-                </div>
-                <div className="flex items-center">
-                  {feature.included && <Check className="text-primary h-5 w-5" />}
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="mt-16 text-center">
