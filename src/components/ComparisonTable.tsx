@@ -42,7 +42,7 @@ const features: Feature[] = [
     platforms: {
       google: "/lovable-uploads/78ed40ad-d420-439c-a0c4-f9a046f23521.png",
       meta: "/lovable-uploads/76f17064-0dc6-4904-90ff-09efdf57e1da.png",
-      other: ""
+      other: "/lovable-uploads/4defffa4-e1f8-4975-8ad8-827f977da26f.png"
     }
   },
   {
