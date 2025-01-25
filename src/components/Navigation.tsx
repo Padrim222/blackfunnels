@@ -62,7 +62,7 @@ export const Navigation = () => {
               Login
             </Button>
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Iniciar 14d grátis
+              Iniciar 14 dias grátis
             </Button>
           </div>
           <div className="md:hidden flex items-center">
@@ -112,7 +112,7 @@ export const Navigation = () => {
             <Button 
               className="w-full bg-primary hover:bg-primary/90 text-white"
             >
-              Iniciar 14d grátis
+              Iniciar 14 dias grátis
             </Button>
           </div>
         </div>
