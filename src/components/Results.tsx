@@ -1,4 +1,4 @@
-import { TrialButton } from "./TrialButton";
+import { TrialButton } from "@/components/TrialButton";
 
 export const Results = () => {
   return (
@@ -15,15 +15,15 @@ export const Results = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-black/50 p-6 rounded-lg border border-gray-800">
-            <p className="text-5xl font-bold text-primary mb-4">+500%</p>
+            <p className="text-5xl font-bold text-primary mb-4">+540%</p>
             <p className="text-white">Aumento em vendas</p>
           </div>
           <div className="bg-black/50 p-6 rounded-lg border border-gray-800">
-            <p className="text-5xl font-bold text-primary mb-4">-40%</p>
+            <p className="text-5xl font-bold text-primary mb-4">-85%</p>
             <p className="text-white">Redução de custos</p>
           </div>
           <div className="bg-black/50 p-6 rounded-lg border border-gray-800">
-            <p className="text-5xl font-bold text-primary mb-4">+300%</p>
+            <p className="text-5xl font-bold text-primary mb-4">+112%</p>
             <p className="text-white">Mais leads qualificados</p>
           </div>
         </div>
