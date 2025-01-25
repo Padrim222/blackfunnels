@@ -59,6 +59,12 @@ export const Results = () => {
       author: "Hector Conde",
       role: "Curso Online / Opções Binárias",
       highlight: true
+    },
+    {
+      quote: "Se todos os sayajins fizessem uma fusão seria essa plataforma, car***o, eu tô impressionado com quão completo está a ferramenta",
+      author: "Jaime Castro",
+      role: "Expert de Lançamentos",
+      highlight: true
     }
   ];
 
