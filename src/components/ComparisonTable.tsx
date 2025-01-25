@@ -82,7 +82,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Automações e fluxos",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/71a9e08e-bcae-48f9-ac78-69e648cbe979.png",
+      "/lovable-uploads/5079757b-50ae-441f-9e43-1d05cc92e10f.png",
+      "/lovable-uploads/31ce2f54-7ad2-4b09-8240-c279c2e89936.png"
+    ]
   },
   {
     feature: "Cursos e Produtos",
