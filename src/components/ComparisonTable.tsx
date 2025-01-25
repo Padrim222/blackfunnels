@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
 interface Feature {
@@ -10,72 +10,47 @@ interface Feature {
 const features: Feature[] = [
   {
     feature: "CRM e Gerenciamento de Pipeline",
-    otherPrice: "R$500 mensal",
+    otherPrice: "R$500/mês",
     included: true,
   },
   {
-    feature: "Funil de vendas ilimitados",
-    otherPrice: "R$1.500 mensal",
+    feature: "Funil de vendas",
+    otherPrice: "R$1.500/mês",
     included: true,
   },
   {
     feature: "Construtor de website",
-    otherPrice: "R$100 mensal",
+    otherPrice: "R$100/mês",
     included: true,
   },
   {
     feature: "Pesquisas e Formulários",
-    otherPrice: "R$250 mensal",
+    otherPrice: "R$250/mês",
     included: true,
   },
   {
     feature: "E-mail Marketing",
-    otherPrice: "R$500 mensal",
+    otherPrice: "R$500/mês",
     included: true,
   },
   {
     feature: "Chat SMS Marketing",
-    otherPrice: "R$500 mensal",
+    otherPrice: "R$500/mês",
     included: true,
   },
   {
     feature: "Reservas e agendamentos",
-    otherPrice: "R$150 mensal",
+    otherPrice: "R$150/mês",
     included: true,
   },
   {
     feature: "Automações e fluxos",
-    otherPrice: "R$500 mensal",
+    otherPrice: "R$500/mês",
     included: true,
   },
   {
     feature: "Cursos e Produtos",
-    otherPrice: "Taxas, transação e hospedagem",
-    included: true,
-  },
-  {
-    feature: "Discador e Rastreamento de chamada",
-    otherPrice: "R$450 mensal",
-    included: true,
-  },
-  {
-    feature: "Gerenciamento de reputação",
-    otherPrice: "R$1.500 mensal",
-    included: true,
-  },
-  {
-    feature: "Trackeamento e Analytics",
-    otherPrice: "R$250 mensal",
-    included: true,
-  },
-  {
-    feature: "Comunidade",
-    otherPrice: "R$500 mensal",
-    included: true,
-  },
-  {
-    feature: "Assinatura de Documentos",
-    otherPrice: "R$100 mensal",
+    otherPrice: "Taxas e transações",
     included: true,
   },
 ];
@@ -95,11 +70,11 @@ export const ComparisonTable = () => {
 
         <div className="mt-16 bg-gradient-to-b from-gray-800/30 to-transparent rounded-xl overflow-hidden">
           <div className="grid grid-cols-4 gap-4 bg-gray-800/50 p-6">
-            <div className="text-xl font-semibold text-white">Features</div>
+            <div className="text-xl font-semibold text-white">Ferramenta</div>
             <div className="text-xl font-semibold text-white text-center">Replaces</div>
-            <div className="text-xl font-semibold text-white">Outra Ferramenta a partir de</div>
+            <div className="text-xl font-semibold text-white">Custo Atual</div>
             <div className="text-xl font-semibold text-white text-center">
-              <img src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" alt="Funil.ai" className="h-8 ml-auto" />
+              <img src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" alt="Black Funnels" className="h-8 ml-auto" />
             </div>
           </div>
 
