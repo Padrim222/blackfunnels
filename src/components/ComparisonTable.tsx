@@ -8,9 +8,9 @@ interface Feature {
   otherPrice: string;
   included: boolean;
   platforms: {
-    google: boolean;
-    meta: boolean;
-    other: boolean;
+    google: string;
+    meta: string;
+    other: string;
   };
 }
 
@@ -20,9 +20,9 @@ const features: Feature[] = [
     otherPrice: "R$547/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -30,9 +30,9 @@ const features: Feature[] = [
     otherPrice: "R$397/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -40,9 +40,9 @@ const features: Feature[] = [
     otherPrice: "R$297/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -50,9 +50,9 @@ const features: Feature[] = [
     otherPrice: "R$497/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -60,9 +60,9 @@ const features: Feature[] = [
     otherPrice: "R$197/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -70,9 +70,9 @@ const features: Feature[] = [
     otherPrice: "R$597/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -80,9 +80,9 @@ const features: Feature[] = [
     otherPrice: "R$1.897/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -90,9 +90,9 @@ const features: Feature[] = [
     otherPrice: "R$147/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   },
   {
@@ -100,9 +100,9 @@ const features: Feature[] = [
     otherPrice: "R$297/mês",
     included: true,
     platforms: {
-      google: true,
-      meta: true,
-      other: true
+      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
+      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
+      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
     }
   }
 ];
@@ -147,21 +147,23 @@ export const ComparisonTable = () => {
                   {feature.feature}
                 </div>
                 <div className="flex justify-center space-x-3">
-                  {feature.platforms.google && (
-                    <div className="w-10 h-10 bg-[#4285F4] rounded-full flex items-center justify-center animate-float">
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                    </div>
-                  )}
-                  {feature.platforms.meta && (
-                    <div className="w-10 h-10 bg-[#FF5722] rounded-full flex items-center justify-center animate-float" style={{ animationDelay: "0.2s" }}>
-                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                    </div>
-                  )}
-                  {feature.platforms.other && (
-                    <div className="w-10 h-10 bg-[#E0E0E0] rounded-full flex items-center justify-center animate-float" style={{ animationDelay: "0.4s" }}>
-                      <div className="w-6 h-6 bg-black/20 rounded-full"></div>
-                    </div>
-                  )}
+                  <img 
+                    src={feature.platforms.google} 
+                    alt="Google" 
+                    className="w-10 h-10 object-contain animate-float"
+                  />
+                  <img 
+                    src={feature.platforms.meta} 
+                    alt="Meta" 
+                    className="w-10 h-10 object-contain animate-float" 
+                    style={{ animationDelay: "0.2s" }}
+                  />
+                  <img 
+                    src={feature.platforms.other} 
+                    alt="Other Platform" 
+                    className="w-10 h-10 object-contain animate-float" 
+                    style={{ animationDelay: "0.4s" }}
+                  />
                 </div>
                 <div className="text-lg text-gray-300">
                   {feature.otherPrice}
