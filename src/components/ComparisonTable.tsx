@@ -104,6 +104,16 @@ const features: Feature[] = [
       meta: "/lovable-uploads/a40d996e-45e9-4f01-b16f-208cc6d5cc17.png",
       other: "/lovable-uploads/148530f5-f4e8-4873-8b10-4d68a0ae3509.png"
     }
+  },
+  {
+    feature: "E-mail Marketing",
+    otherPrice: "R$497/mês",
+    included: true,
+    platforms: {
+      google: "/lovable-uploads/edea7a19-0215-45b8-a533-7b731c2448c4.png",
+      meta: "/lovable-uploads/104d8fca-1f9d-466e-bf0e-b3a861849b9c.png",
+      other: "/lovable-uploads/89e75e9c-851b-465f-8c73-66565e06dbcb.png"
+    }
   }
 ];
 
