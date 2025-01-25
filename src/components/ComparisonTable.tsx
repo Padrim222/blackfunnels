@@ -1,173 +1,207 @@
+import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
-type ComparisonItem = {
+interface Feature {
   feature: string;
   otherPrice: string;
   included: boolean;
-  icons: string[];
-};
+  platforms: {
+    google: boolean;
+    meta: boolean;
+    other: boolean;
+  };
+}
 
-const comparisonItems: ComparisonItem[] = [
+const features: Feature[] = [
   {
-    feature: "CRM e Gerenciamento de Pipeline",
-    otherPrice: "R$500 mensal",
+    feature: "Chat",
+    otherPrice: "R$547/mês",
     included: true,
-    icons: [
-      "/lovable-uploads/902dade8-d2e4-41e0-9ebf-45fbf47378b9.png",
-      "/lovable-uploads/adc4f8e6-2b0a-45b9-a53c-69f71b6d743c.png",
-      "/lovable-uploads/3d21b87a-24eb-41b2-b6f0-b1e146dc62c0.png"
-    ]
-  },
-  {
-    feature: "Funil de vendas ilimitados",
-    otherPrice: "R$1.500 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Construtor de website",
-    otherPrice: "R$100 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Pesquisas e Formulários",
-    otherPrice: "R$250 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "E-mail Marketing",
-    otherPrice: "R$500 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Chat SMS Marketing",
-    otherPrice: "R$500 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Reservas e agendamentos",
-    otherPrice: "R$150 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Automações e fluxos",
-    otherPrice: "R$500 mensal",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Cursos e Produtos",
-    otherPrice: "Taxas, transação e hospedagem",
-    included: true,
-    icons: []
-  },
-  {
-    feature: "Discador e Rastreamento de chamada",
-    otherPrice: "R$450 mensal",
-    included: true,
-    icons: []
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Gerenciamento de reputação",
-    otherPrice: "R$1.500 mensal",
+    otherPrice: "R$397/mês",
     included: true,
-    icons: []
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
-    feature: "Trackeamento e Analytics",
-    otherPrice: "R$250 mensal",
+    feature: "Trackeamento Analytics",
+    otherPrice: "R$297/mês",
     included: true,
-    icons: []
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Comunidade",
-    otherPrice: "R$500 mensal",
+    otherPrice: "R$497/mês",
     included: true,
-    icons: []
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   },
   {
     feature: "Assinatura de Documentos",
-    otherPrice: "R$100 mensal",
+    otherPrice: "R$197/mês",
     included: true,
-    icons: []
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "CRM e Gerenciamento de Pipeline",
+    otherPrice: "R$597/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Funil de vendas",
+    otherPrice: "R$1.897/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Construtor de website",
+    otherPrice: "R$147/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
+  },
+  {
+    feature: "Pesquisas e Formulários",
+    otherPrice: "R$297/mês",
+    included: true,
+    platforms: {
+      google: true,
+      meta: true,
+      other: true
+    }
   }
 ];
 
 export const ComparisonTable = () => {
   return (
-    <div className="bg-background py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            O QUE VOCÊ PODE SUBSTITUIR
+    <div className="py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-base font-semibold leading-7 text-primary">
+            SUBSTITUA TODAS AS SUAS FERRAMENTAS
           </h2>
-          <p className="text-xl text-foreground mb-4">
-            Finalmente cancele todas as outras ferramentas caras que você está pagando
+          <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            Economize tempo e dinheiro cancelando todas as outras ferramentas
           </p>
-          <p className="text-lg text-muted-foreground">Funcionalidades</p>
         </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-muted">
-                <th className="py-4 text-left text-foreground">Features</th>
-                <th className="py-4 text-left text-foreground">Replaces</th>
-                <th className="py-4 text-left text-foreground">
-                  Outra Ferramenta a partir de
-                </th>
-                <th className="py-4 text-center text-foreground">Black Funnels</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonItems.map((item, index) => (
-                <tr
-                  key={index}
-                  className="border-b border-muted hover:bg-muted/5"
-                >
-                  <td className="py-4 text-foreground">{item.feature}</td>
-                  <td className="py-4">
-                    <div className="flex gap-2 items-center">
-                      {item.icons.map((icon, iconIndex) => (
-                        <img
-                          key={iconIndex}
-                          src={icon}
-                          alt={`${item.feature} platform ${iconIndex + 1}`}
-                          className="w-8 h-8 object-contain bg-white rounded-full p-1"
-                        />
-                      ))}
+        <div className="mt-16 bg-black/40 rounded-xl overflow-hidden border border-gray-800">
+          <div className="grid grid-cols-4 gap-4 bg-black/60 p-6 border-b border-gray-800">
+            <div className="text-xl font-semibold text-white">Ferramenta</div>
+            <div className="text-xl font-semibold text-white text-center">Substitui</div>
+            <div className="text-xl font-semibold text-white">Custo Atual</div>
+            <div className="text-xl font-semibold text-white text-center">
+              <img src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" alt="Black Funnels" className="h-8 ml-auto" />
+            </div>
+          </div>
+
+          <div>
+            {features.map((feature, index) => (
+              <div 
+                key={index} 
+                className="grid grid-cols-4 gap-4 items-center p-6 border-b border-gray-800/50 hover:bg-black/40 transition-colors"
+              >
+                <div className="text-lg font-medium text-white">
+                  {feature.feature}
+                </div>
+                <div className="flex justify-center space-x-3">
+                  {feature.platforms.google && (
+                    <div className="w-10 h-10 bg-[#4285F4] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
                     </div>
-                  </td>
-                  <td className="py-4 text-foreground">{item.otherPrice}</td>
-                  <td className="py-4 text-center">
-                    {item.included && (
-                      <Check className="h-6 w-6 text-primary mx-auto" />
-                    )}
-                  </td>
-                </tr>
-              ))}
-              <tr className="border-b border-muted bg-black/50">
-                <td className="py-4 font-bold text-foreground">Total</td>
-                <td></td>
-                <td className="py-4 font-bold text-foreground">R$ 6.800,00</td>
-                <td className="py-4 font-bold text-center text-primary">R$297</td>
-              </tr>
-            </tbody>
-          </table>
+                  )}
+                  {feature.platforms.meta && (
+                    <div className="w-10 h-10 bg-[#FF5722] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                    </div>
+                  )}
+                  {feature.platforms.other && (
+                    <div className="w-10 h-10 bg-[#E0E0E0] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-black/20 rounded-full"></div>
+                    </div>
+                  )}
+                </div>
+                <div className="text-lg text-gray-300">
+                  {feature.otherPrice}
+                </div>
+                <div className="flex justify-center">
+                  {feature.included && (
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
+                      <Check className="text-green-500 h-5 w-5" />
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="text-center mt-16">
+        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <Card className="ring-1 ring-white/10 rounded-3xl p-8 xl:p-10">
+            <div className="flex items-center justify-between gap-x-4">
+              <h3 className="text-lg font-semibold leading-8 text-white">
+                Outras Ferramentas
+              </h3>
+            </div>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-bold tracking-tight text-white">R$6.800</span>
+              <span className="text-sm font-semibold leading-6 text-gray-300">/mensal</span>
+            </p>
+          </Card>
+
+          <Card className="ring-2 ring-primary rounded-3xl p-8 xl:p-10">
+            <div className="flex items-center justify-between gap-x-4">
+              <h3 className="text-lg font-semibold leading-8 text-white">
+                Black Funnels
+              </h3>
+            </div>
+            <p className="mt-6 flex items-baseline gap-x-1">
+              <span className="text-4xl font-bold tracking-tight text-white">R$297</span>
+              <span className="text-sm font-semibold leading-6 text-gray-300">/mensal</span>
+            </p>
+          </Card>
+        </div>
+
+        <div className="mt-16 text-center">
           <div className="inline-block bg-black px-4 py-2 rounded-full mb-4">
             <p className="text-white font-semibold">Oferta Limitada</p>
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Garanta 14 dias grátis
-          </h3>
+          </h2>
           <p className="text-xl text-primary">
             Economize mais de R$6.500,00/mês
           </p>
