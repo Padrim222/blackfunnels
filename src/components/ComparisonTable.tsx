@@ -66,26 +66,31 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Discador e Rastreamento de chamada",
     otherPrice: "R$450 mensal",
     included: true,
+    icon: "/lovable-uploads/a0c801a7-ec22-4b49-abcd-85c81e5cc15f.png"
   },
   {
     feature: "Gerenciamento de reputação",
     otherPrice: "R$1.500 mensal",
     included: true,
+    icon: "/lovable-uploads/807b079c-6037-40f6-87e6-b9774452d119.png"
   },
   {
     feature: "Trackeamento e Analytics",
     otherPrice: "R$250 mensal",
     included: true,
+    icon: "/lovable-uploads/2d6086ae-2c9d-4212-bd26-06e429a46ca7.png"
   },
   {
     feature: "Comunidade",
     otherPrice: "R$500 mensal",
     included: true,
+    icon: "/lovable-uploads/90a30ac1-de7b-4b81-bba8-43c7e3186446.png"
   },
   {
     feature: "Assinatura de Documentos",
     otherPrice: "R$100 mensal",
     included: true,
+    icon: "/lovable-uploads/2eff257e-8f02-4cf5-8099-2b18ca37f075.png"
   },
 ];
 
