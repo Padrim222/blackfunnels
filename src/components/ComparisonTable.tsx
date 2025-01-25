@@ -102,7 +102,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Discador e Rastreamento de chamada",
     otherPrice: "R$450 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/effa2993-213c-42ac-b0c8-6bba763f6015.png",
+      "/lovable-uploads/81dc0c94-18ac-4bda-a02e-5da2383213e1.png",
+      "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png"
+    ]
   },
   {
     feature: "Gerenciamento de reputação",
