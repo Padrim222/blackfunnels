@@ -6,13 +6,13 @@ import type { Feature } from '@/types/comparison';
 
 const features: Feature[] = [
   {
-    feature: "Discador e Rastreamento de chamada",
-    otherPrice: "R$497/mês",
+    feature: "Assinatura de Documentos",
+    otherPrice: "R$100/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/0b143d04-98f3-4c62-8013-66f6c252d073.png",
-      meta: "/lovable-uploads/0a0e396e-8991-4fd5-993c-ed6f4028ed33.png",
-      other: "/lovable-uploads/8c54e121-9825-4291-8e7e-70aecb35fde8.png"
+      google: "/lovable-uploads/e58e1a7f-df90-490a-b61f-054a3251fc83.png",
+      meta: "/lovable-uploads/0a5eef0e-48be-4d40-adbe-62361dc5e83f.png",
+      other: "/lovable-uploads/e58e1a7f-df90-490a-b61f-054a3251fc83.png"
     }
   },
   {
