@@ -73,7 +73,13 @@ const bonusContent = [
   {
     week: "Semana 2",
     title: "Funil de Isca",
-    topics: []
+    topics: [
+      "A máquina de \"leads infinitos\"",
+      "A estratégia de isca",
+      "Planejando a sua isca",
+      "Crie o formulário de captura",
+      "Configure a automação de entrega"
+    ]
   },
   {
     week: "Semana 3",
