@@ -168,28 +168,32 @@ export const ComparisonTable = () => {
           ))}
         </div>
 
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-white mb-8">Bônus para todos assinantes</h3>
-          <h4 className="text-3xl font-bold text-center mb-12">Seu negócio online em 4 semanas</h4>
-          <div className="grid grid-cols-1 gap-8">
+        <div className="mt-16 bg-[#222222] rounded-3xl p-12">
+          <div className="text-center mb-16">
+            <h3 className="text-2xl font-bold text-white mb-4">Bônus para todos assinantes</h3>
+            <h4 className="text-4xl font-bold text-primary">Seu negócio online em 4 semanas</h4>
+          </div>
+          <div className="grid grid-cols-1 gap-12">
             {bonusContent.map((week, index) => (
               <div key={index} className="flex flex-col md:flex-row items-start gap-8">
                 <div className="w-full md:w-1/4">
-                  <h5 className="text-primary text-2xl font-bold">{week.week}</h5>
-                  <p className="text-white text-xl">{week.title}</p>
+                  <h5 className="text-primary text-3xl font-bold mb-2">{week.week}</h5>
+                  <p className="text-white text-2xl font-semibold">{week.title}</p>
                 </div>
-                <Card className="w-full md:w-3/4 bg-secondary/20 border-secondary">
-                  <CardContent className="p-6">
-                    <ul className="space-y-3">
-                      {week.topics.map((topic, topicIndex) => (
-                        <li key={topicIndex} className="text-white text-sm flex items-start gap-2">
-                          <Check className="text-primary h-4 w-4 mt-1 flex-shrink-0" />
-                          <span>{topic}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
+                {week.topics.length > 0 && (
+                  <Card className="w-full md:w-3/4 bg-[#333333] border-none shadow-xl">
+                    <CardContent className="p-8">
+                      <ul className="space-y-4">
+                        {week.topics.map((topic, topicIndex) => (
+                          <li key={topicIndex} className="text-white text-base flex items-start gap-3">
+                            <Check className="text-primary h-5 w-5 mt-1 flex-shrink-0" />
+                            <span>{topic}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )}
               </div>
             ))}
           </div>
