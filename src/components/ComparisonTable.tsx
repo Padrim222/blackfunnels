@@ -52,7 +52,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "E-mail Marketing",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/ce23304e-43e1-4314-8348-f1d93f736dec.png",
+      "/lovable-uploads/06cf7af2-6bf1-488b-a732-bb988bbda307.png",
+      "/lovable-uploads/bc0f5fae-3fb7-4b9e-9d04-30c805ff8d19.png"
+    ]
   },
   {
     feature: "Chat SMS Marketing",
