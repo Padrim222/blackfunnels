@@ -59,7 +59,7 @@ export const Pricing = () => {
       name: "PRO",
       monthlyPrice: "R$497",
       annualPrice: "R$414",
-      originalPrice: isAnnual ? "R$497/mo" : "",
+      originalPrice: isAnnual ? "R$497,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "",
       highlight: "Mais Popular",
@@ -105,7 +105,7 @@ export const Pricing = () => {
       name: "MASTER",
       monthlyPrice: "R$697",
       annualPrice: "R$580",
-      originalPrice: isAnnual ? "R$997/mo" : "",
+      originalPrice: isAnnual ? "R$997,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "Economize R$ 300/mês",
       highlight: "Máximo Desempenho",
@@ -162,7 +162,7 @@ export const Pricing = () => {
           <p className="text-xl text-primary mb-8">
             Economize mais de R$6.500,00/mês
           </p>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 mb-8">
             <span className={`text-lg ${isAnnual ? 'text-white' : 'text-gray-400'}`}>Anual</span>
             <Switch
               checked={!isAnnual}
