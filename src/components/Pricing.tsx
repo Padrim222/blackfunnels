@@ -2,15 +2,20 @@ import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
+import { Switch } from "./ui/switch";
+import { useState } from "react";
 
 export const Pricing = () => {
+  const [isAnnual, setIsAnnual] = useState(true);
+
   const plans = [
     {
       name: "Lite",
-      originalPrice: "R$297,00",
-      price: "R$247",
+      monthlyPrice: "R$297",
+      annualPrice: "R$247",
+      originalPrice: isAnnual ? "R$297,00" : "",
       period: "/mês",
-      savings: "Cobrança anual (Economize R$ 594/ano)",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 594/ano)" : "",
       highlight: "Ideal para começar",
       features: [
         "Websites Ilimitados",
@@ -52,10 +57,11 @@ export const Pricing = () => {
     },
     {
       name: "PRO",
-      originalPrice: "R$497/mo",
-      price: "R$414",
+      monthlyPrice: "R$497",
+      annualPrice: "R$414",
+      originalPrice: isAnnual ? "R$497/mo" : "",
       period: "/mês",
-      savings: "Cobrança anual (Economize R$ 994/ano)",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "",
       highlight: "Mais Popular",
       features: [
         "Websites Ilimitados",
@@ -97,10 +103,11 @@ export const Pricing = () => {
     },
     {
       name: "MASTER",
-      originalPrice: "R$997/mo",
-      price: "R$580",
+      monthlyPrice: "R$697",
+      annualPrice: "R$580",
+      originalPrice: isAnnual ? "R$997/mo" : "",
       period: "/mês",
-      savings: "Cobrança anual (Economize R$ 994/ano)",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "Economize R$ 300/mês",
       highlight: "Máximo Desempenho",
       features: [
         "Websites Ilimitados",
@@ -152,9 +159,18 @@ export const Pricing = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Garanta 14 dias grátis
           </h2>
-          <p className="text-xl text-primary">
+          <p className="text-xl text-primary mb-8">
             Economize mais de R$6.500,00/mês
           </p>
+          <div className="flex items-center justify-center gap-4">
+            <span className={`text-lg ${isAnnual ? 'text-white' : 'text-gray-400'}`}>Anual</span>
+            <Switch
+              checked={!isAnnual}
+              onCheckedChange={(checked) => setIsAnnual(!checked)}
+              className="data-[state=checked]:bg-primary"
+            />
+            <span className={`text-lg ${!isAnnual ? 'text-white' : 'text-gray-400'}`}>Mensal</span>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
@@ -166,14 +182,20 @@ export const Pricing = () => {
                 {plan.highlight}
               </Badge>
               <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-              <div className="text-gray-400 mb-2 line-through">
-                {plan.originalPrice}
-              </div>
+              {plan.originalPrice && (
+                <div className="text-gray-400 mb-2 line-through">
+                  {plan.originalPrice}
+                </div>
+              )}
               <div className="flex items-baseline mb-2">
-                <span className="text-4xl font-bold text-white">{plan.price}</span>
+                <span className="text-4xl font-bold text-white">
+                  {isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                </span>
                 <span className="text-gray-400 ml-2">{plan.period}</span>
               </div>
-              <p className="text-sm text-gray-400 mb-6">{plan.savings}</p>
+              {plan.savings && (
+                <p className="text-sm text-gray-400 mb-6">{plan.savings}</p>
+              )}
               <Button className="w-full mb-6 bg-primary hover:bg-primary/90">
                 Iniciar teste grátis
               </Button>
