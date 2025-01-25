@@ -57,7 +57,7 @@ export const Roadmap = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {weeks.map((week, index) => (
-            <Card key={index} className={`bg-pink-500 text-white border-none`}>
+            <Card key={index} className="bg-pink-500 text-white border-none">
               <CardHeader>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-xl font-medium">{week.week}</span>
