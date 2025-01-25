@@ -16,13 +16,13 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    feature: "Chat SMS Marketing",
-    otherPrice: "R$397/mês",
+    feature: "Discador e Rastreamento de chamada",
+    otherPrice: "R$497/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/ff3b2720-5979-4ff5-b11e-843735f1f31c.png",
-      meta: "/lovable-uploads/edfcccc8-9093-4421-88a1-7f9d48f5d731.png",
-      other: "/lovable-uploads/2b1f0da2-9ea7-4bf2-9c5c-7ef619786d43.png"
+      google: "/lovable-uploads/0b143d04-98f3-4c62-8013-66f6c252d073.png",
+      meta: "/lovable-uploads/0a0e396e-8991-4fd5-993c-ed6f4028ed33.png",
+      other: "/lovable-uploads/8c54e121-9825-4291-8e7e-70aecb35fde8.png"
     }
   },
   {
