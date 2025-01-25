@@ -1,5 +1,5 @@
 import { TrialButton } from "@/components/TrialButton";
-import { ArrowUpRight, Users, Target, Clock } from "lucide-react";
+import { ArrowUpRight, Users, Target, Clock, Quote } from "lucide-react";
 
 export const Results = () => {
   const stats = [
@@ -27,7 +27,14 @@ export const Results = () => {
     {
       quote: "A funil.ai revolucionou meu negócio digital. Consegui automatizar processos que antes tomavam horas do meu dia.",
       author: "Empreendedor Digital",
-      role: "Curso Online"
+      role: "Curso Online",
+      highlight: true
+    },
+    {
+      quote: "A BlackFunnels é Muuuito Diferenciada. eu cheguei a pagar Rateio pra ter várias ferramentas kkk , hoje eu posso usar tudo na palma da mão em 1 só. salvaram demais!",
+      author: "Fabricio Jurik",
+      role: "CEO Athena solutions e CTO Hunter Group",
+      highlight: true
     },
     {
       quote: "Em apenas 3 meses, dobramos nossa base de clientes e reduzimos custos operacionais em 70%.",
@@ -70,19 +77,25 @@ export const Results = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-black/30 p-6 rounded-lg border border-gray-800 relative"
+              className={`bg-black/30 p-8 rounded-lg border ${
+                testimonial.highlight 
+                  ? 'border-primary/50 shadow-lg shadow-primary/10' 
+                  : 'border-gray-800'
+              } relative hover:scale-[1.02] transition-all duration-300`}
             >
-              <div className="absolute -top-3 -left-3 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-2xl text-white">"</span>
+              <div className="absolute -top-4 -left-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                <Quote className="w-5 h-5 text-white" />
               </div>
-              <p className="text-gray-400 mb-4 mt-4">{testimonial.quote}</p>
-              <div className="border-t border-gray-800 pt-4">
-                <p className="text-white font-semibold">{testimonial.author}</p>
-                <p className="text-gray-500 text-sm">{testimonial.role}</p>
+              <p className="text-gray-300 mb-6 mt-4 text-lg leading-relaxed italic">
+                "{testimonial.quote}"
+              </p>
+              <div className="border-t border-gray-800 pt-4 mt-4">
+                <p className="text-white font-semibold text-lg">{testimonial.author}</p>
+                <p className="text-primary text-sm mt-1">{testimonial.role}</p>
               </div>
             </div>
           ))}
