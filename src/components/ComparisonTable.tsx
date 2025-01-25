@@ -145,6 +145,54 @@ const comparisonItems: ComparisonItem[] = [
     otherPrice: "R$200 mensal",
     included: true,
     icon: "/lovable-uploads/54ef9865-c32d-4e65-af53-1525d43d6b16.png"
+  },
+  {
+    feature: "Integração com Zapier",
+    otherPrice: "R$250 mensal",
+    included: true,
+    icon: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png"
+  },
+  {
+    feature: "Integração com Pandadoc",
+    otherPrice: "R$200 mensal",
+    included: true,
+    icon: "/lovable-uploads/2ec5dac5-a6b5-4618-8b40-0a99b3e30455.png"
+  },
+  {
+    feature: "Integração com Skool",
+    otherPrice: "R$300 mensal",
+    included: true,
+    icon: "/lovable-uploads/f0373cae-48d8-4b4f-a439-1f11ebde9fa8.png"
+  },
+  {
+    feature: "Integração com Convertkit",
+    otherPrice: "R$250 mensal",
+    included: true,
+    icon: "/lovable-uploads/5496a1eb-51be-4a6f-97c2-550feeeb2ea4.png"
+  },
+  {
+    feature: "Integração com Bluebird",
+    otherPrice: "R$200 mensal",
+    included: true,
+    icon: "/lovable-uploads/861bf14d-b222-4c51-93dd-292abbd82b29.png"
+  },
+  {
+    feature: "Integração com Active Campaign",
+    otherPrice: "R$500 mensal",
+    included: true,
+    icon: "/lovable-uploads/5900fcc5-6ba3-4c38-b332-0ecaa0d50fb3.png"
+  },
+  {
+    feature: "Integração com Kajabi",
+    otherPrice: "R$300 mensal",
+    included: true,
+    icon: "/lovable-uploads/40d8c3e1-9742-414c-8987-c45b1755a856.png"
+  },
+  {
+    feature: "Integração com Webflow",
+    otherPrice: "R$250 mensal",
+    included: true,
+    icon: "/lovable-uploads/544a7401-0ee0-430f-aee7-ac9b41825e72.png"
   }
 ];
 
