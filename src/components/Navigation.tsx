@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Bell, Search, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,12 +51,6 @@ export const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-foreground hover:text-primary">
-              <Bell className="h-5 w-5" />
-            </Button>
             <img
               src="https://github.com/shadcn.png"
               alt="Avatar"
