@@ -18,7 +18,14 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <img src="/lovable-uploads/f6281d60-3132-4ff5-9dcb-5c05e84d62b1.png" alt="Logo Black Funnels" className="h-8" />
+            <div className="flex items-center space-x-2">
+              <img 
+                src="/lovable-uploads/788104cd-669a-452e-8908-5c6a46a78150.png" 
+                alt="Logo Black Funnels" 
+                className="h-8 w-auto"
+              />
+              <span className="text-lg font-heading font-bold">BlackFunnels</span>
+            </div>
             <div className="hidden md:flex items-center ml-8 space-x-4">
               <Button 
                 variant="ghost" 
