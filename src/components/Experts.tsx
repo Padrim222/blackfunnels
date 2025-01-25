@@ -30,7 +30,7 @@ export const Experts = () => {
             Funis prontos para você utilizar
           </h2>
           <p className="text-xl text-gray-400 mb-8">
-            Modelamos as estratégias dos maiores do 🌎 para você aplicar em seu negócio
+            Modelamos as estratégias dos maiores do Brasil para você aplicar em seu negócio
           </p>
           <TrialButton />
         </div>
