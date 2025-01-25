@@ -52,24 +52,27 @@ export const Roadmap = () => {
   return (
     <section className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
           Seu negócio online em 4 semanas
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {weeks.map((week, index) => (
-            <Card key={index} className="bg-pink-500 text-white border-none">
+            <Card 
+              key={index} 
+              className="bg-background border border-primary/20 hover:border-primary/40 transition-colors duration-200"
+            >
               <CardHeader>
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-xl font-medium">{week.week}</span>
-                  <span className="text-lg">{week.subtitle}</span>
+                  <span className="text-xl font-medium text-primary">{week.week}</span>
+                  <span className="text-lg text-muted-foreground">{week.subtitle}</span>
                 </div>
-                <CardTitle className="text-2xl">{week.title}</CardTitle>
+                <CardTitle className="text-2xl text-foreground">{week.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   {week.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-center gap-2">
-                      <Check className="h-5 w-5 flex-shrink-0" />
+                    <li key={itemIndex} className="flex items-center gap-2 text-muted-foreground">
+                      <Check className="h-5 w-5 flex-shrink-0 text-primary" />
                       <span>{item}</span>
                     </li>
                   ))}
