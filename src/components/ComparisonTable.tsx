@@ -139,7 +139,10 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Assinatura de Documentos",
     otherPrice: "R$100 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/c0cb665e-d3d0-412e-9a3d-96632d4fa165.png",
+      "/lovable-uploads/2e179ecd-c40b-4990-b539-2836017e31bb.png"
+    ]
   }
 ];
 
