@@ -51,7 +51,7 @@ export const Pricing = () => {
   ];
 
   return (
-    <div className="bg-background py-24">
+    <div id="pricing" className="bg-background py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block bg-black px-4 py-2 rounded-full mb-4">
