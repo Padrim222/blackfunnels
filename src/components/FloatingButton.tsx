@@ -1,23 +1,20 @@
-import { Plus } from "lucide-react";
-import { Button } from "./ui/button";
-import { useToast } from "./ui/use-toast";
+import { Button } from "@/components/ui/button";
+import { ArrowUpCircle } from "lucide-react";
 
 export const FloatingButton = () => {
-  const { toast } = useToast();
-
-  const handleClick = () => {
-    toast({
-      title: "Fale Conosco",
-      description: "Entre em contato para saber mais sobre nossos planos!",
-    });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <Button
-      onClick={handleClick}
-      className="fixed bottom-8 right-8 rounded-full w-14 h-14 shadow-lg hover:shadow-xl transition-all duration-300 z-50"
-    >
-      <Plus className="w-6 h-6" />
-    </Button>
+    <div className="fixed bottom-8 right-8 z-50 animate-fade-in">
+      <Button
+        onClick={scrollToTop}
+        size="lg"
+        className="rounded-full shadow-lg bg-primary hover:bg-primary/90 transition-all duration-300 p-6"
+      >
+        <ArrowUpCircle className="h-6 w-6" />
+      </Button>
+    </div>
   );
 };
