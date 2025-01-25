@@ -66,6 +66,16 @@ const features: Feature[] = [
     }
   },
   {
+    feature: "Automações e fluxos",
+    otherPrice: "R$497/mês",
+    included: true,
+    platforms: {
+      google: "/lovable-uploads/d2bbf326-1e21-4814-be89-d623ab0b611f.png",
+      meta: "/lovable-uploads/ac0fd19c-560d-48b6-8195-a71321752283.png",
+      other: "/lovable-uploads/f9d67641-faea-43ef-a94c-a8cc62fada35.png"
+    }
+  },
+  {
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$597/mês",
     included: true,
