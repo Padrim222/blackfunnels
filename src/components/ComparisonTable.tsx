@@ -116,12 +116,12 @@ export const ComparisonTable = () => {
           <table className="w-full">
             <thead>
               <tr className="border-b border-muted">
-                <th className="py-4 text-left text-foreground">Features</th>
-                <th className="py-4 text-left text-foreground">Replaces</th>
-                <th className="py-4 text-left text-foreground">
+                <th className="py-6 text-left text-foreground font-normal text-lg">Features</th>
+                <th className="py-6 text-left text-foreground font-normal text-lg">Replaces</th>
+                <th className="py-6 text-left text-foreground font-normal text-lg">
                   Outra Ferramenta a partir de
                 </th>
-                <th className="py-4 text-center text-foreground">Black Funnels</th>
+                <th className="py-6 text-center text-foreground font-normal text-lg">Black Funnels</th>
               </tr>
             </thead>
             <tbody>
@@ -130,9 +130,9 @@ export const ComparisonTable = () => {
                   key={index}
                   className="border-b border-muted hover:bg-muted/5"
                 >
-                  <td className="py-4 text-foreground">{item.feature}</td>
-                  <td className="py-4">
-                    <div className="flex gap-2 items-center">
+                  <td className="py-6 text-foreground text-base">{item.feature}</td>
+                  <td className="py-6">
+                    <div className="flex gap-3 items-center">
                       {item.icons.map((icon, iconIndex) => (
                         <img
                           key={iconIndex}
@@ -143,8 +143,8 @@ export const ComparisonTable = () => {
                       ))}
                     </div>
                   </td>
-                  <td className="py-4 text-foreground">{item.otherPrice}</td>
-                  <td className="py-4 text-center">
+                  <td className="py-6 text-foreground text-base">{item.otherPrice}</td>
+                  <td className="py-6 text-center">
                     {item.included && (
                       <Check className="h-6 w-6 text-primary mx-auto" />
                     )}
@@ -152,10 +152,10 @@ export const ComparisonTable = () => {
                 </tr>
               ))}
               <tr className="border-b border-muted bg-black/50">
-                <td className="py-4 font-bold text-foreground">Total</td>
+                <td className="py-6 font-bold text-foreground">Total</td>
                 <td></td>
-                <td className="py-4 font-bold text-foreground">R$ 6.800,00</td>
-                <td className="py-4 font-bold text-center text-primary">R$297</td>
+                <td className="py-6 font-bold text-foreground">R$ 6.800,00</td>
+                <td className="py-6 font-bold text-center text-primary">R$297</td>
               </tr>
             </tbody>
           </table>
