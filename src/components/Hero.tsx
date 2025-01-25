@@ -13,6 +13,14 @@ export const Hero = () => {
           opacity: "0.5"
         }}
       />
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0)`,
+          backgroundSize: '40px 40px',
+          opacity: '0.3'
+        }}
+      />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center z-10">
         <h1 
           className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in"
