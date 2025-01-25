@@ -3,19 +3,19 @@ export const Experts = () => {
     {
       name: "Pablo Marçal",
       title: "Funil Perpétuo",
-      description: "Com certeza o maior Gênio do Marketing Digital no mundo, empresário serial e autor da principal trilogia de marketing.",
+      description: "Com certeza o maior Gênio do Marketing Digital no Brasil empresário serial e autor de inúmeras empresas de sucesso.",
       image: "/lovable-uploads/c0088bce-d8ee-4212-bbaa-d2f70ca902fd.png"
     },
     {
       name: "Ed Cred",
       title: "Funis Black",
-      description: "Empresário, autor e palestrante. Ele é o fundador da Cardone Enterprises e criador do movimento 10x.",
+      description: "Especialista em funis de igaming, OB e Mercado de afiliados, milhões faturados com funis validados.",
       image: "/lovable-uploads/d68d266d-395f-42d4-be38-f8151c70e11d.png"
     },
     {
       name: "Pedro Sobral",
       title: "Funis de Desafio",
-      description: "Pioneiro no modelo de desafios pagos e gratuitos que geraram mais de $100 milhões de dólares. Autor de best-seller e fundador de diversas empresas.",
+      description: "Um dos maiores lançadores com seus funis de desafio e conteúdo gratuito, garantindo uma base de mais de 50 mil alunos",
       image: "/lovable-uploads/609d6f5c-f26f-4d65-b41e-e39a8525ef93.png"
     }
   ];
