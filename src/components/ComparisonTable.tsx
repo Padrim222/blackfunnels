@@ -30,9 +30,9 @@ const features: Feature[] = [
     otherPrice: "R$397/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
-      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
-      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
+      google: "/lovable-uploads/32fbcb8d-50d4-4d80-b90a-bef94b2748cf.png",
+      meta: "/lovable-uploads/c2f85601-42cf-49d1-b43d-d9f9c2241007.png",
+      other: "/lovable-uploads/fb2914d7-a3a6-4371-9f19-4fd2c2c16331.png"
     }
   },
   {
