@@ -25,12 +25,12 @@ export default {
         background: "#000000",
         foreground: "#d1d1d1",
         primary: {
-          DEFAULT: "#e957ff",
-          foreground: "#000000",
+          DEFAULT: "#1EAEDB", // Azul brilhante
+          foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#47fff0",
-          foreground: "#000000",
+          DEFAULT: "#D946EF", // Rosa magenta
+          foreground: "#ffffff",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
