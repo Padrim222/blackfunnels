@@ -92,7 +92,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Cursos e Produtos",
     otherPrice: "Taxas, transação e hospedagem",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/f7c2e7c7-bf06-415b-8828-590ae1939524.png",
+      "/lovable-uploads/73b7665a-a233-4c53-9219-494e77aab9e2.png",
+      "/lovable-uploads/abdfc951-84d6-4051-9ee7-fce145422cd4.png"
+    ]
   },
   {
     feature: "Discador e Rastreamento de chamada",
