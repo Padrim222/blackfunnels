@@ -22,7 +22,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Funil de vendas ilimitados",
     otherPrice: "R$1.500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/f2e8eae1-423b-4059-9e9a-49275d52ccb9.png",
+      "/lovable-uploads/7b1e4499-e0ab-4c58-a182-86504adf8f5d.png",
+      "/lovable-uploads/17c4014d-8ffa-4f18-bcd8-12967418fb92.png"
+    ]
   },
   {
     feature: "Construtor de website",
