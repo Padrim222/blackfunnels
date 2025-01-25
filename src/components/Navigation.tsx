@@ -51,11 +51,12 @@ export const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <img
-              src="https://github.com/shadcn.png"
-              alt="Avatar"
-              className="h-8 w-8 rounded-full"
-            />
+            <Button variant="ghost" className="text-foreground hover:text-primary">
+              Login
+            </Button>
+            <Button className="bg-primary hover:bg-primary/90 text-white">
+              Iniciar 14d grátis
+            </Button>
           </div>
           <div className="md:hidden flex items-center">
             <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className="text-foreground">
@@ -94,6 +95,17 @@ export const Navigation = () => {
               onClick={() => scrollToSection("pricing")}
             >
               Preços
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="w-full justify-start text-foreground hover:text-primary"
+            >
+              Login
+            </Button>
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90 text-white"
+            >
+              Iniciar 14d grátis
             </Button>
           </div>
         </div>
