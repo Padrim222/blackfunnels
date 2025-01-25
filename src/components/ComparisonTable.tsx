@@ -92,6 +92,60 @@ const comparisonItems: ComparisonItem[] = [
     included: true,
     icon: "/lovable-uploads/2eff257e-8f02-4cf5-8099-2b18ca37f075.png"
   },
+  {
+    feature: "Notificações",
+    otherPrice: "R$200 mensal",
+    included: true,
+    icon: "/lovable-uploads/28a9176b-4ec2-4ebc-a099-02cf31fd15d0.png"
+  },
+  {
+    feature: "Integração com Whatsapp",
+    otherPrice: "R$300 mensal",
+    included: true,
+    icon: "/lovable-uploads/78b85340-1089-428a-b31b-44f7831c6759.png"
+  },
+  {
+    feature: "Integração com Calendly",
+    otherPrice: "R$150 mensal",
+    included: true,
+    icon: "/lovable-uploads/fbb68abf-b17c-4215-bd09-e87a73dedb8b.png"
+  },
+  {
+    feature: "Integração com Clickup",
+    otherPrice: "R$250 mensal",
+    included: true,
+    icon: "/lovable-uploads/3adaf65b-d235-4a31-9c4e-1b374a97be76.png"
+  },
+  {
+    feature: "Integração com Typebot",
+    otherPrice: "R$200 mensal",
+    included: true,
+    icon: "/lovable-uploads/df580a98-63d2-4f11-b574-cab1d4fd06be.png"
+  },
+  {
+    feature: "Integração com Hotmart",
+    otherPrice: "R$150 mensal",
+    included: true,
+    icon: "/lovable-uploads/815bde0d-f864-42c1-a611-95243572c744.png"
+  },
+  {
+    feature: "Integração com Semrush",
+    otherPrice: "R$500 mensal",
+    included: true,
+    icon: "/lovable-uploads/9ddc9868-3bca-4970-84a2-f71ee936368c.png"
+  },
+  {
+    feature: "Integração com Twilio",
+    otherPrice: "R$300 mensal",
+    included: true,
+    icon: "/lovable-uploads/d2cebbc6-9248-45d1-9330-37f8b3c0ce08.png"
+  },
+  {
+    feature: "Integração com Cloudflare",
+    otherPrice: "R$200 mensal",
+    included: true,
+    icon: "/lovable-uploads/54ef9865-c32d-4e65-af53-1525d43d6b16.png"
+  }
 ];
 
 export const ComparisonTable = () => {
