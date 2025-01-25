@@ -8,7 +8,7 @@ import {
 export const FAQ = () => {
   const faqs = [
     {
-      question: "Porque funil.ai é diferente de outras plataformas?",
+      question: "Por que a funil.ai é diferente de outras plataformas?",
       answer: "A funil.ai oferece uma solução completa e integrada, eliminando a necessidade de múltiplas ferramentas."
     },
     {

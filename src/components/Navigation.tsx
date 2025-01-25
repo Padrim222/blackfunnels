@@ -10,9 +10,9 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <img src="/lovable-uploads/f6281d60-3132-4ff5-9dcb-5c05e84d62b1.png" alt="Black Funnels Logo" className="h-8" />
+            <img src="/lovable-uploads/f6281d60-3132-4ff5-9dcb-5c05e84d62b1.png" alt="Logo Black Funnels" className="h-8" />
             <div className="hidden md:flex items-center ml-8 space-x-4">
-              <Button variant="ghost" className="text-foreground hover:text-primary">Dashboard</Button>
+              <Button variant="ghost" className="text-foreground hover:text-primary">Painel</Button>
               <Button variant="ghost" className="text-foreground hover:text-primary">Ganhos</Button>
               <Button variant="ghost" className="text-foreground hover:text-primary">Produtos</Button>
               <Button variant="ghost" className="text-foreground hover:text-primary">Pedidos</Button>
@@ -42,7 +42,7 @@ export const Navigation = () => {
       {isOpen && (
         <div className="md:hidden bg-background">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">Dashboard</Button>
+            <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">Painel</Button>
             <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">Ganhos</Button>
             <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">Produtos</Button>
             <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">Pedidos</Button>

@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Bot,
-    title: "A.I",
+    title: "I.A",
     description: "Ganhe força e eficiência utilizando a inteligência artificial integrada ao seu negócio",
   },
   {
