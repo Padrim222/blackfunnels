@@ -65,9 +65,9 @@ const features = [
 
 export const Features = () => {
   return (
-    <div id="features" className="bg-background py-24">
+    <div id="features" className="bg-background py-24 scroll-mt-20" role="region" aria-label="Funcionalidades">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             DIFERENTE DE TUDO O QUE VOCÊ JÁ VIU
           </h2>
@@ -82,9 +82,11 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg border border-muted hover:border-primary/50 transition-colors"
+              className="p-6 rounded-lg border border-muted hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+              role="article"
             >
-              <feature.icon className="h-12 w-12 text-primary mb-4" />
+              <feature.icon className="h-12 w-12 text-primary mb-4 transform transition-all duration-300 group-hover:scale-110" />
               <h3 className="text-xl font-semibold text-foreground mb-2">
                 {feature.title}
               </h3>
