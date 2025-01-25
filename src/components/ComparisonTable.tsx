@@ -130,7 +130,10 @@ const comparisonItems: ComparisonItem[] = [
     feature: "Comunidade",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/8ff934b7-9360-409a-8198-c522eae39845.png",
+      "/lovable-uploads/b1ffede3-6742-481e-bbbf-7fb109349b98.png"
+    ]
   },
   {
     feature: "Assinatura de Documentos",
