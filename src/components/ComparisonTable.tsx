@@ -46,13 +46,13 @@ const features: Feature[] = [
     }
   },
   {
-    feature: "Comunidade",
+    feature: "Comunidades e Forúns",
     otherPrice: "R$497/mês",
     included: true,
     platforms: {
-      google: "/lovable-uploads/903ff8f7-2819-4d6b-abfb-00d6c8636d6f.png",
-      meta: "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png",
-      other: "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
+      google: "/lovable-uploads/78ed40ad-d420-439c-a0c4-f9a046f23521.png",
+      meta: "/lovable-uploads/76f17064-0dc6-4904-90ff-09efdf57e1da.png",
+      other: ""
     }
   },
   {
