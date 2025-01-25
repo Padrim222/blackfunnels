@@ -6,7 +6,6 @@ import { Experts } from "@/components/Experts";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
-import { Testimonials } from "@/components/Testimonials";
 import { Results } from "@/components/Results";
 import { Integration } from "@/components/Integration";
 import { ComparisonTable } from "@/components/ComparisonTable";
@@ -23,7 +22,6 @@ const Index = () => {
       <Experts />
       <Integration />
       <ComparisonTable />
-      <Testimonials />
       <Pricing />
       <FAQ />
       <Footer />
