@@ -1,4 +1,4 @@
-import { Mail, Users, BarChart, Layout, Bot, Zap, Globe, Funnel, MessageSquare, Network, PenTool, LineChart } from "lucide-react";
+import { Mail, Users, BarChart, Layout, Bot, Zap, Globe, Filter, MessageSquare, Network, PenTool, LineChart } from "lucide-react";
 
 const features = [
   {
@@ -7,7 +7,7 @@ const features = [
     description: "Crie seu website com design impecável e alta performance com o editor de sites funil.ai",
   },
   {
-    icon: Funnel,
+    icon: Filter,
     title: "Funis",
     description: "Converta seus visitantes em clientes com sua oferta, upsell, downsell e automações",
   },
