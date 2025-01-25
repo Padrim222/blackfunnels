@@ -85,36 +85,53 @@ export const ComparisonTable = () => {
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary">SUBSTITUA TODAS AS SUAS FERRAMENTAS</h2>
+          <h2 className="text-base font-semibold leading-7 text-primary">
+            SUBSTITUA TODAS AS SUAS FERRAMENTAS
+          </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Economize tempo e dinheiro cancelando todas as outras ferramentas
           </p>
         </div>
 
-        <div className="mt-16">
-          <div className="grid grid-cols-4 gap-4 mb-8 text-lg font-semibold text-white border-b border-gray-700 pb-4">
-            <div>Features</div>
-            <div className="text-center">Replaces</div>
-            <div>Outra Ferramenta a partir de</div>
-            <div className="text-center">Incluído</div>
+        <div className="mt-16 bg-gradient-to-b from-gray-800/30 to-transparent rounded-xl overflow-hidden">
+          <div className="grid grid-cols-4 gap-4 bg-gray-800/50 p-6">
+            <div className="text-xl font-semibold text-white">Features</div>
+            <div className="text-xl font-semibold text-white text-center">Replaces</div>
+            <div className="text-xl font-semibold text-white">Outra Ferramenta a partir de</div>
+            <div className="text-xl font-semibold text-white text-center">
+              <img src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" alt="Funil.ai" className="h-8 ml-auto" />
+            </div>
           </div>
 
-          <div className="space-y-8">
+          <div>
             {features.map((feature, index) => (
-              <div key={index} className="grid grid-cols-4 gap-4 items-center py-4 border-b border-gray-700">
-                <div className="text-lg font-semibold text-white">
+              <div 
+                key={index} 
+                className="grid grid-cols-4 gap-4 items-center p-6 border-b border-gray-700/50 hover:bg-gray-800/20 transition-colors"
+              >
+                <div className="text-lg font-medium text-white">
                   {feature.feature}
                 </div>
-                <div className="flex justify-center space-x-2">
-                  {/* Placeholder for tool logos - you can add actual logos here */}
-                  <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
-                  <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
+                <div className="flex justify-center space-x-3">
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                  </div>
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+                  </div>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-gray-800/20 rounded-full"></div>
+                  </div>
                 </div>
-                <div className="text-gray-300">
+                <div className="text-lg text-gray-300">
                   {feature.otherPrice}
                 </div>
                 <div className="flex justify-center">
-                  {feature.included && <Check className="text-primary h-6 w-6" />}
+                  {feature.included && (
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
+                      <Check className="text-green-500 h-5 w-5" />
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
