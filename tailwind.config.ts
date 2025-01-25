@@ -25,11 +25,11 @@ export default {
         background: "#000000",
         foreground: "#d1d1d1",
         primary: {
-          DEFAULT: "#1EAEDB", // Azul brilhante
+          DEFAULT: "#FF570A", // Changed from #1EAEDB to #FF570A
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#D946EF", // Rosa magenta
+          DEFAULT: "#D946EF",
           foreground: "#ffffff",
         },
         destructive: {
