@@ -10,42 +10,42 @@ interface Feature {
 const features: Feature[] = [
   {
     feature: "CRM e Gerenciamento de Pipeline",
-    otherPrice: "R$500/mês",
+    otherPrice: "R$597/mês",
     included: true,
   },
   {
     feature: "Funil de vendas",
-    otherPrice: "R$1.500/mês",
+    otherPrice: "R$1.897/mês",
     included: true,
   },
   {
     feature: "Construtor de website",
-    otherPrice: "R$100/mês",
+    otherPrice: "R$147/mês",
     included: true,
   },
   {
     feature: "Pesquisas e Formulários",
-    otherPrice: "R$250/mês",
+    otherPrice: "R$297/mês",
     included: true,
   },
   {
     feature: "E-mail Marketing",
-    otherPrice: "R$500/mês",
+    otherPrice: "R$647/mês",
     included: true,
   },
   {
     feature: "Chat SMS Marketing",
-    otherPrice: "R$500/mês",
+    otherPrice: "R$547/mês",
     included: true,
   },
   {
     feature: "Reservas e agendamentos",
-    otherPrice: "R$150/mês",
+    otherPrice: "R$197/mês",
     included: true,
   },
   {
     feature: "Automações e fluxos",
-    otherPrice: "R$500/mês",
+    otherPrice: "R$597/mês",
     included: true,
   },
   {
@@ -68,10 +68,10 @@ export const ComparisonTable = () => {
           </p>
         </div>
 
-        <div className="mt-16 bg-gradient-to-b from-gray-800/30 to-transparent rounded-xl overflow-hidden">
-          <div className="grid grid-cols-4 gap-4 bg-gray-800/50 p-6">
+        <div className="mt-16 bg-black/40 rounded-xl overflow-hidden border border-gray-800">
+          <div className="grid grid-cols-4 gap-4 bg-black/60 p-6 border-b border-gray-800">
             <div className="text-xl font-semibold text-white">Ferramenta</div>
-            <div className="text-xl font-semibold text-white text-center">Replaces</div>
+            <div className="text-xl font-semibold text-white text-center">Substitui</div>
             <div className="text-xl font-semibold text-white">Custo Atual</div>
             <div className="text-xl font-semibold text-white text-center">
               <img src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" alt="Black Funnels" className="h-8 ml-auto" />
@@ -82,20 +82,20 @@ export const ComparisonTable = () => {
             {features.map((feature, index) => (
               <div 
                 key={index} 
-                className="grid grid-cols-4 gap-4 items-center p-6 border-b border-gray-700/50 hover:bg-gray-800/20 transition-colors"
+                className="grid grid-cols-4 gap-4 items-center p-6 border-b border-gray-800/50 hover:bg-black/40 transition-colors"
               >
                 <div className="text-lg font-medium text-white">
                   {feature.feature}
                 </div>
                 <div className="flex justify-center space-x-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[#4285F4] rounded-full flex items-center justify-center">
                     <div className="w-6 h-6 bg-white/20 rounded-full"></div>
                   </div>
-                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[#FF5722] rounded-full flex items-center justify-center">
                     <div className="w-6 h-6 bg-white/20 rounded-full"></div>
                   </div>
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-6 h-6 bg-gray-800/20 rounded-full"></div>
+                  <div className="w-10 h-10 bg-[#E0E0E0] rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-black/20 rounded-full"></div>
                   </div>
                 </div>
                 <div className="text-lg text-gray-300">
