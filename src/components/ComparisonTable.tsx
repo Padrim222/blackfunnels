@@ -12,123 +12,85 @@ const comparisonItems: ComparisonItem[] = [
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/5a602589-e27c-4c82-b77b-564654c4fe08.png"
-    ]
+    icons: []
   },
   {
     feature: "Funil de vendas ilimitados",
     otherPrice: "R$1.500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/bfc75f19-fa44-4376-8454-75a7b12d9dc1.png"
-    ]
+    icons: []
   },
   {
     feature: "Construtor de website",
     otherPrice: "R$100 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/8e597996-2bcc-4e7e-88d5-812eb0ae81e4.png"
-    ]
+    icons: []
   },
   {
     feature: "Pesquisas e Formulários",
     otherPrice: "R$250 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/2715aec4-d581-4706-8bfb-cbced3ee576f.png"
-    ]
+    icons: []
   },
   {
     feature: "E-mail Marketing",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/b283606b-80cb-46d7-945d-45beeaea5bea.png"
-    ]
+    icons: []
   },
   {
     feature: "Chat SMS Marketing",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/6b929334-829d-4192-adfd-380248388150.png",
-      "/lovable-uploads/861bf14d-b222-4c51-93dd-292abbd82b29.png"
-    ]
+    icons: []
   },
   {
     feature: "Reservas e agendamentos",
     otherPrice: "R$150 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/9d94908a-5c76-4e6e-8110-ad21e49f15e0.png",
-      "/lovable-uploads/8949d7b7-8d0c-42f9-ae46-85eaf03f3161.png"
-    ]
+    icons: []
   },
   {
     feature: "Automações e fluxos",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/aaddb179-cf16-4773-b7bb-b0783e964d9e.png",
-      "/lovable-uploads/df580a98-63d2-4f11-b574-cab1d4fd06be.png",
-      "/lovable-uploads/f0373cae-48d8-4b4f-a439-1f11ebde9fa8.png"
-    ]
+    icons: []
   },
   {
     feature: "Cursos e Produtos",
     otherPrice: "Taxas, transação e hospedagem",
     included: true,
-    icons: [
-      "/lovable-uploads/e2b0f476-2cab-4166-a847-9c42790f420c.png",
-      "/lovable-uploads/544a7401-0ee0-430f-aee7-ac9b41825e72.png"
-    ]
+    icons: []
   },
   {
     feature: "Discador e Rastreamento de chamada",
     otherPrice: "R$450 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/a0c801a7-ec22-4b49-abcd-85c81e5cc15f.png",
-      "/lovable-uploads/f6281d60-3132-4ff5-9dcb-5c05e84d62b1.png"
-    ]
+    icons: []
   },
   {
     feature: "Gerenciamento de reputação",
     otherPrice: "R$1.500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/807b079c-6037-40f6-87e6-b9774452d119.png",
-      "/lovable-uploads/9ddc9868-3bca-4970-84a2-f71ee936368c.png"
-    ]
+    icons: []
   },
   {
     feature: "Trackeamento e Analytics",
     otherPrice: "R$250 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/2d6086ae-2c9d-4212-bd26-06e429a46ca7.png",
-      "/lovable-uploads/3adaf65b-d235-4a31-9c4e-1b374a97be76.png"
-    ]
+    icons: []
   },
   {
     feature: "Comunidade",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/90a30ac1-de7b-4b81-bba8-43c7e3186446.png",
-      "/lovable-uploads/40d8c3e1-9742-414c-8987-c45b1755a856.png"
-    ]
+    icons: []
   },
   {
     feature: "Assinatura de Documentos",
     otherPrice: "R$100 mensal",
     included: true,
-    icons: [
-      "/lovable-uploads/2eff257e-8f02-4cf5-8099-2b18ca37f075.png",
-      "/lovable-uploads/fbb68abf-b17c-4215-bd09-e87a73dedb8b.png"
-    ]
+    icons: []
   }
 ];
 
