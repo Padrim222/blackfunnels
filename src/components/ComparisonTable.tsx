@@ -12,7 +12,11 @@ const comparisonItems: ComparisonItem[] = [
     feature: "CRM e Gerenciamento de Pipeline",
     otherPrice: "R$500 mensal",
     included: true,
-    icons: []
+    icons: [
+      "/lovable-uploads/902dade8-d2e4-41e0-9ebf-45fbf47378b9.png",
+      "/lovable-uploads/adc4f8e6-2b0a-45b9-a53c-69f71b6d743c.png",
+      "/lovable-uploads/3d21b87a-24eb-41b2-b6f0-b1e146dc62c0.png"
+    ]
   },
   {
     feature: "Funil de vendas ilimitados",
