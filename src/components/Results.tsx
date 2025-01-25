@@ -25,12 +25,6 @@ export const Results = () => {
 
   const testimonials = [
     {
-      quote: "A funil.ai revolucionou meu negócio digital. Consegui automatizar processos que antes tomavam horas do meu dia.",
-      author: "Empreendedor Digital",
-      role: "Curso Online",
-      highlight: true
-    },
-    {
       quote: "A BlackFunnels é Muuuito Diferenciada. eu cheguei a pagar Rateio pra ter várias ferramentas kkk , hoje eu posso usar tudo na palma da mão em 1 só. salvaram demais!",
       author: "Fabricio Jurik",
       role: "CEO Athena solutions e CTO Hunter Group",
