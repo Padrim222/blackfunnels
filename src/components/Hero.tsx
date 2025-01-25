@@ -21,7 +21,7 @@ export const Hero = () => {
           opacity: '0.3'
         }}
       />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 text-center z-10">
         <h1 
           className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in"
           aria-label="Tudo que você precisa, agora em uma ferramenta"
@@ -50,20 +50,20 @@ export const Hero = () => {
         </div>
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate-fade-in" style={{ animationDelay: "400ms" }}>
           <div className="text-center transform transition-all duration-300 hover:scale-105">
-            <h3 className="text-2xl font-bold text-white">100+</h3>
-            <p className="text-gray-400">Templates</p>
+            <h3 className="text-4xl font-bold text-white mb-2">100+</h3>
+            <p className="text-gray-400">Templates Prontos</p>
           </div>
           <div className="text-center transform transition-all duration-300 hover:scale-105">
-            <h3 className="text-2xl font-bold text-white">50k+</h3>
-            <p className="text-gray-400">Usuários</p>
+            <h3 className="text-4xl font-bold text-white mb-2">50k+</h3>
+            <p className="text-gray-400">Usuários Ativos</p>
           </div>
           <div className="text-center transform transition-all duration-300 hover:scale-105">
-            <h3 className="text-2xl font-bold text-white">99.9%</h3>
-            <p className="text-gray-400">Uptime</p>
+            <h3 className="text-4xl font-bold text-white mb-2">99.9%</h3>
+            <p className="text-gray-400">Uptime Garantido</p>
           </div>
           <div className="text-center transform transition-all duration-300 hover:scale-105">
-            <h3 className="text-2xl font-bold text-white">24/7</h3>
-            <p className="text-gray-400">Suporte</p>
+            <h3 className="text-4xl font-bold text-white mb-2">24/7</h3>
+            <p className="text-gray-400">Suporte Premium</p>
           </div>
         </div>
       </div>
