@@ -6,9 +6,10 @@ export const Results = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Resultados Comprovados
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-400 mb-8">
             Veja o que nossos clientes estão conquistando com a plataforma
           </p>
+          <TrialButton />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-black/50 p-6 rounded-lg border border-gray-800">

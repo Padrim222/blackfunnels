@@ -1,4 +1,5 @@
 import { Mail, Users, BarChart, Layout, Bot, Zap, Globe, Filter, MessageSquare, Network, PenTool, LineChart } from "lucide-react";
+import { TrialButton } from "./TrialButton";
 
 const features = [
   {
@@ -74,9 +75,10 @@ export const Features = () => {
           <p className="text-xl text-foreground mb-4">
             Nós te entregamos tudo o que você precisa para ter sucesso online
           </p>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mb-8">
             Agora você precisa apenas de 1⚡️ ferramenta
           </p>
+          <TrialButton />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (

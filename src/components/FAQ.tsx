@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TrialButton } from "./TrialButton";
 
 export const FAQ = () => {
   const faqs = [
@@ -28,9 +29,12 @@ export const FAQ = () => {
   return (
     <div className="bg-background py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
           Perguntas Frequentes
         </h2>
+        <div className="text-center mb-12">
+          <TrialButton />
+        </div>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>

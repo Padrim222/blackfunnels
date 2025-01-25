@@ -1,3 +1,5 @@
+import { TrialButton } from "./TrialButton";
+
 export const Experts = () => {
   const experts = [
     {
@@ -27,9 +29,10 @@ export const Experts = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Funis prontos para você utilizar
           </h2>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-400 mb-8">
             Modelamos as estratégias dos maiores do 🌎 para você aplicar em seu negócio
           </p>
+          <TrialButton />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {experts.map((expert, index) => (
