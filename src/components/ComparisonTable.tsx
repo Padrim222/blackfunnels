@@ -124,6 +124,16 @@ const features: Feature[] = [
       meta: "/lovable-uploads/104d8fca-1f9d-466e-bf0e-b3a861849b9c.png",
       other: "/lovable-uploads/89e75e9c-851b-465f-8c73-66565e06dbcb.png"
     }
+  },
+  {
+    feature: "Plataforma de cursos e produtos",
+    otherPrice: "Taxas, transação e hospedagem",
+    included: true,
+    platforms: {
+      google: "/lovable-uploads/ab44ce5e-5b7a-427a-9d7b-2ae29bdb4f16.png",
+      meta: "/lovable-uploads/ede7b956-83af-4411-bc7f-21139aebeb1b.png",
+      other: "/lovable-uploads/b4ef1a8e-bf2a-4fd3-86ce-da185163ac35.png"
+    }
   }
 ];
 
