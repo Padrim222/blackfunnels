@@ -46,7 +46,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Raleway", "sans-serif"],
+        sans: ['Raleway', 'sans-serif'],
+        heading: ['Raleway', 'sans-serif'],
+        body: ['Raleway ExtraLight', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
