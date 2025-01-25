@@ -1,3 +1,5 @@
+import { TrialButton } from "./TrialButton";
+
 export const Results = () => {
   return (
     <div className="bg-background py-24">
