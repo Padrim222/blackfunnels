@@ -50,10 +50,11 @@
 
   * {
     @apply border-border;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body overflow-x-hidden min-h-screen;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -66,12 +67,20 @@
 
   html {
     scroll-behavior: smooth;
+    @apply text-base;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
   }
 
   /* Section Patterns */
   .pattern-dots {
     background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-size: 20px 20px;
+    @apply sm:bg-size-[40px];
     background-position: -19px -19px;
   }
 
@@ -79,7 +88,8 @@
     background-image: 
       linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-size: 25px 25px;
+    @apply sm:bg-size-[50px];
   }
 
   .pattern-diagonal {
@@ -118,5 +128,16 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  button, a {
+    @apply touch-manipulation;
   }
 }

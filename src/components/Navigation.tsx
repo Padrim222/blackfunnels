@@ -14,7 +14,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-background border-b border-muted z-50">
+    <nav className="fixed w-full bg-background/95 backdrop-blur-sm border-b border-muted z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -66,15 +66,20 @@ export const Navigation = () => {
             </Button>
           </div>
           <div className="md:hidden flex items-center">
-            <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className="text-foreground">
+            <Button 
+              variant="ghost" 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="text-foreground -mr-2"
+              aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-background">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden bg-background/95 backdrop-blur-sm border-b border-muted animate-fade-in">
+          <div className="px-4 pt-2 pb-3 space-y-2">
             <Button 
               variant="ghost" 
               className="w-full justify-start text-foreground hover:text-primary"
@@ -103,17 +108,19 @@ export const Navigation = () => {
             >
               Preços
             </Button>
-            <Button 
-              variant="ghost" 
-              className="w-full justify-start text-foreground hover:text-primary"
-            >
-              Login
-            </Button>
-            <Button 
-              className="w-full bg-primary hover:bg-primary/90 text-white"
-            >
-              Iniciar 14 dias grátis
-            </Button>
+            <div className="pt-2 space-y-2">
+              <Button 
+                variant="ghost" 
+                className="w-full justify-center text-foreground hover:text-primary"
+              >
+                Login
+              </Button>
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 text-white"
+              >
+                Iniciar 14 dias grátis
+              </Button>
+            </div>
           </div>
         </div>
       )}
