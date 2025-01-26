@@ -36,7 +36,7 @@ export const ComparisonTableRow = ({ feature }: ComparisonTableRowProps) => {
       <div className="text-sm sm:text-lg text-gray-300 text-left sm:text-center">
         {feature.otherPrice}
       </div>
-      <div className="flex justify-end sm:justify-center">
+      <div className="flex justify-center items-center w-full">
         {feature.included && (
           <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500/20 rounded-full flex items-center justify-center">
             <Check className="text-green-500 h-4 w-4 sm:h-5 sm:w-5" />
