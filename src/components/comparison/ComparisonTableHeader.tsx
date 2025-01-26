@@ -2,16 +2,18 @@ import React from 'react';
 
 export const ComparisonTableHeader = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 bg-black/60 p-6 border-b border-gray-800">
-      <div className="text-xl font-semibold text-white">Ferramenta</div>
-      <div className="text-xl font-semibold text-white text-center">Substitui</div>
-      <div className="text-xl font-semibold text-white">Custo Atual</div>
-      <div className="text-xl font-semibold text-white text-center">
-        <img 
-          src="/lovable-uploads/a0e078b8-5770-4945-883e-76cee0cb39ca.png" 
-          alt="Black Funnels" 
-          className="h-8 ml-auto" 
-        />
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 items-center p-4 sm:p-6 bg-black/60">
+      <div className="text-sm sm:text-lg font-semibold text-white col-span-2 sm:col-span-1">
+        Ferramenta
+      </div>
+      <div className="text-sm sm:text-lg font-semibold text-white text-left sm:text-center col-span-2 sm:col-span-1">
+        Substitui
+      </div>
+      <div className="text-sm sm:text-lg font-semibold text-white text-left sm:text-center">
+        Custo Atual
+      </div>
+      <div className="text-sm sm:text-lg font-semibold text-white text-center">
+        Incluído
       </div>
     </div>
   );

@@ -118,27 +118,28 @@ const features: Feature[] = [
 ];
 
 export const ComparisonTable = () => {
-  // Override the calculated total to use the fixed value of 6800
   const totalOtherPrice = 6800;
 
   return (
-    <div className="py-24 sm:py-32 pattern-diagonal">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="py-12 sm:py-32 pattern-diagonal">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary animate-fade-in">
             SUBSTITUA TODAS AS SUAS FERRAMENTAS
           </h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl animate-slide-in">
+          <p className="mt-2 text-2xl sm:text-4xl font-bold tracking-tight text-white sm:text-5xl animate-slide-in">
             Economize tempo e dinheiro cancelando todas as outras ferramentas
           </p>
         </div>
 
-        <div className="mt-16 bg-black/40 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800 animate-scale">
-          <ComparisonTableHeader />
-          <div className="divide-y divide-gray-800/50">
-            {features.map((feature, index) => (
-              <ComparisonTableRow key={index} feature={feature} />
-            ))}
+        <div className="mt-8 sm:mt-16 bg-black/40 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800 animate-scale">
+          <div className="overflow-x-auto">
+            <ComparisonTableHeader />
+            <div className="divide-y divide-gray-800/50">
+              {features.map((feature, index) => (
+                <ComparisonTableRow key={index} feature={feature} />
+              ))}
+            </div>
           </div>
         </div>
 
