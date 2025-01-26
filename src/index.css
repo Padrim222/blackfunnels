@@ -75,12 +75,14 @@
       font-size: 14px;
     }
   }
+}
 
+@layer components {
   /* Section Patterns */
   .pattern-dots {
     background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
-    @apply sm:bg-size-[40px];
+    @apply sm:bg-[size:40px_40px];
     background-position: -19px -19px;
   }
 
@@ -89,7 +91,7 @@
       linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 25px 25px;
-    @apply sm:bg-size-[50px];
+    @apply sm:bg-[size:50px_50px];
   }
 
   .pattern-diagonal {
@@ -109,7 +111,9 @@
       radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 87, 10, 0.03) 21%, rgba(255, 87, 10, 0.03) 34%, transparent 35%, transparent) 0 -50px;
     background-size: 75px 100px;
   }
+}
 
+@layer utilities {
   /* Improve focus styles for better accessibility */
   *:focus-visible {
     @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-background;
