@@ -9,10 +9,10 @@ export const Experts = () => {
       image: "/lovable-uploads/c0088bce-d8ee-4212-bbaa-d2f70ca902fd.png"
     },
     {
-      name: "Ed Cred",
-      title: "Funis Black",
-      description: "Especialista em funis de igaming, OB e Mercado de afiliados, milhões faturados com funis validados.",
-      image: "/lovable-uploads/d68d266d-395f-42d4-be38-f8151c70e11d.png"
+      name: "Thiago Finch",
+      title: "Funis de Alta Conversão",
+      description: "Especialista em funis de alta conversão e lançamentos digitais, com mais de R$50 milhões em vendas através de seus funis otimizados.",
+      image: "/lovable-uploads/4adf0057-db06-403d-bf21-3ea0a58fe7d7.png"
     },
     {
       name: "Pedro Sobral",
