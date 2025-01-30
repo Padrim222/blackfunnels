@@ -17,6 +17,7 @@ export const Pricing = () => {
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 594/ano)" : "",
       highlight: "Ideal para começar",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/00g5n91nAaZ77LybIP" : "https://buy.stripe.com/6oEdTF9U6d7f6Hu147",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -63,6 +64,7 @@ export const Pricing = () => {
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "",
       highlight: "Mais Popular",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/5kA16T0jw4AJ2reeV3" : "https://buy.stripe.com/14kcPB8Q24AJ2reeV3",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -109,6 +111,7 @@ export const Pricing = () => {
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "Economize R$ 300/mês",
       highlight: "Máximo Desempenho",
+      checkoutUrl: "https://buy.stripe.com/cN202P9U65ENaXKbIS",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -196,7 +199,10 @@ export const Pricing = () => {
               {plan.savings && (
                 <p className="text-sm text-gray-400 mb-6">{plan.savings}</p>
               )}
-              <Button className="w-full mb-6 bg-primary hover:bg-primary/90">
+              <Button 
+                className="w-full mb-6 bg-primary hover:bg-primary/90"
+                onClick={() => window.location.href = plan.checkoutUrl}
+              >
                 Iniciar teste grátis
               </Button>
               
@@ -218,7 +224,10 @@ export const Pricing = () => {
               </div>
               
               <div className="mt-6 pt-6 border-t border-gray-800">
-                <Button className="w-full bg-primary hover:bg-primary/90">
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90"
+                  onClick={() => window.location.href = plan.checkoutUrl}
+                >
                   Iniciar teste grátis
                 </Button>
                 <div className="mt-4 text-center">
