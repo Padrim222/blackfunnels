@@ -6,7 +6,7 @@ import { Switch } from "./ui/switch";
 import { useState } from "react";
 
 export const Pricing = () => {
-  const [isAnnual, setIsAnnual] = useState(true);
+  const [isAnnual, setIsAnnual] = useState(false);
 
   const plans = [
     {
@@ -166,13 +166,13 @@ export const Pricing = () => {
             Economize mais de R$6.500,00/mês
           </p>
           <div className="flex items-center justify-center gap-4 mb-8">
-            <span className={`text-lg ${isAnnual ? 'text-white' : 'text-gray-400'}`}>Anual</span>
+            <span className={`text-lg ${!isAnnual ? 'text-white' : 'text-gray-400'}`}>Mensal</span>
             <Switch
-              checked={!isAnnual}
-              onCheckedChange={(checked) => setIsAnnual(!checked)}
+              checked={isAnnual}
+              onCheckedChange={(checked) => setIsAnnual(checked)}
               className="data-[state=checked]:bg-primary"
             />
-            <span className={`text-lg ${!isAnnual ? 'text-white' : 'text-gray-400'}`}>Mensal</span>
+            <span className={`text-lg ${isAnnual ? 'text-white' : 'text-gray-400'}`}>Anual</span>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
