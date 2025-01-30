@@ -15,9 +15,9 @@ export const Pricing = () => {
       annualPrice: "R$247",
       originalPrice: isAnnual ? "R$297,00" : "",
       period: "/mês",
-      savings: isAnnual ? "Cobrança anual (Economize R$ 594/ano)" : "",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 600/ano)" : "",
       highlight: "Ideal para começar",
-      checkoutUrl: isAnnual ? "https://buy.stripe.com/00g5n91nAaZ77LybIP" : "https://buy.stripe.com/6oEdTF9U6d7f6Hu147",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/3cs4j58Q24AJ9TG9AO" : "https://buy.stripe.com/bIY02P6HU1oxaXK3cp",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -59,12 +59,12 @@ export const Pricing = () => {
     {
       name: "PRO",
       monthlyPrice: "R$497",
-      annualPrice: "R$414",
+      annualPrice: "R$421",
       originalPrice: isAnnual ? "R$497,00" : "",
       period: "/mês",
-      savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 912/ano)" : "",
       highlight: "Mais Popular",
-      checkoutUrl: isAnnual ? "https://buy.stripe.com/5kA16T0jw4AJ2reeV3" : "https://buy.stripe.com/14kcPB8Q24AJ2reeV3",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/8wMbLx5DQd7faXKbIY" : "https://buy.stripe.com/28og1N2rE7MV1na5kz",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -106,12 +106,12 @@ export const Pricing = () => {
     {
       name: "MASTER",
       monthlyPrice: "R$697",
-      annualPrice: "R$580",
+      annualPrice: "R$542",
       originalPrice: isAnnual ? "R$997,00" : "",
       period: "/mês",
-      savings: isAnnual ? "Cobrança anual (Economize R$ 994/ano)" : "Economize R$ 300/mês",
+      savings: isAnnual ? "Cobrança anual (Economize R$ 1.860/ano)" : "Economize R$ 300/mês",
       highlight: "Máximo Desempenho",
-      checkoutUrl: "https://buy.stripe.com/cN202P9U65ENaXKbIS",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/00g02P3vIebjfe09AS" : "https://buy.stripe.com/aEUeXJ4zM6IR4zm9AT",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
