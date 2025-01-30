@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative bg-black pt-20" role="banner">
       <div 
@@ -36,6 +41,7 @@ export const Hero = () => {
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-base sm:text-lg transform transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-primary/50 focus:outline-none w-full sm:w-auto"
             aria-label="Começar Teste Grátis"
+            onClick={scrollToPricing}
           >
             Começar Teste Grátis
           </Button>

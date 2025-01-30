@@ -6,6 +6,9 @@ export const TrialButton = () => {
   const { toast } = useToast();
 
   const handleClick = () => {
+    const pricingSection = document.getElementById('pricing');
+    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+    
     toast({
       title: "Teste Grátis",
       description: "Iniciando seu período de teste gratuito...",
