@@ -17,7 +17,7 @@ export const Pricing = () => {
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 600/ano)" : "",
       highlight: "Ideal para começar",
-      checkoutUrl: isAnnual ? "https://buy.stripe.com/3cs4j58Q24AJ9TG9AO" : "https://buy.stripe.com/bIY02P6HU1oxaXK3cp",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/5kA4j54zMaZ70j65kG" : "https://buy.stripe.com/6oE7vh5DQ2sB1naeVe",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -54,7 +54,8 @@ export const Pricing = () => {
         "Comunidade",
         "Onboarding Básico"
       ],
-      color: "border-gray-600"
+      color: "border-gray-600",
+      isAvailable: true
     },
     {
       name: "PRO",
@@ -63,8 +64,8 @@ export const Pricing = () => {
       originalPrice: isAnnual ? "R$497,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 912/ano)" : "",
-      highlight: "Mais Popular",
-      checkoutUrl: isAnnual ? "https://buy.stripe.com/8wMbLx5DQd7faXKbIY" : "https://buy.stripe.com/28og1N2rE7MV1na5kz",
+      highlight: "Em Breve",
+      checkoutUrl: "#",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -101,7 +102,8 @@ export const Pricing = () => {
         "Comunidade VIP",
         "Onboarding Personalizado"
       ],
-      color: "border-primary"
+      color: "border-primary",
+      isAvailable: false
     },
     {
       name: "MASTER",
@@ -110,8 +112,8 @@ export const Pricing = () => {
       originalPrice: isAnnual ? "R$997,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 1.860/ano)" : "Economize R$ 300/mês",
-      highlight: "Máximo Desempenho",
-      checkoutUrl: isAnnual ? "https://buy.stripe.com/00g02P3vIebjfe09AS" : "https://buy.stripe.com/aEUeXJ4zM6IR4zm9AT",
+      highlight: "Em Breve",
+      checkoutUrl: "#",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -148,7 +150,8 @@ export const Pricing = () => {
         "Comunidade Elite",
         "Onboarding VIP com Consultor Dedicado"
       ],
-      color: "border-secondary"
+      color: "border-secondary",
+      isAvailable: false
     }
   ];
 
@@ -179,7 +182,7 @@ export const Pricing = () => {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`p-6 rounded-lg border-2 ${plan.color} hover:scale-105 transition-transform duration-300`}
+              className={`p-6 rounded-lg border-2 ${plan.color} hover:scale-105 transition-transform duration-300 ${!plan.isAvailable ? 'opacity-50' : ''}`}
             >
               <Badge variant="outline" className="mb-2">
                 {plan.highlight}
@@ -199,12 +202,21 @@ export const Pricing = () => {
               {plan.savings && (
                 <p className="text-sm text-gray-400 mb-6">{plan.savings}</p>
               )}
-              <Button 
-                className="w-full mb-6 bg-primary hover:bg-primary/90"
-                onClick={() => window.location.href = plan.checkoutUrl}
-              >
-                Iniciar teste grátis
-              </Button>
+              {plan.isAvailable ? (
+                <Button 
+                  className="w-full mb-6 bg-primary hover:bg-primary/90"
+                  onClick={() => window.location.href = plan.checkoutUrl}
+                >
+                  Iniciar teste grátis
+                </Button>
+              ) : (
+                <Button 
+                  className="w-full mb-6 bg-gray-600 cursor-not-allowed"
+                  disabled
+                >
+                  Em breve
+                </Button>
+              )}
               
               <div className="space-y-4">
                 {plan.features.map((feature, featureIndex) => (
@@ -224,12 +236,21 @@ export const Pricing = () => {
               </div>
               
               <div className="mt-6 pt-6 border-t border-gray-800">
-                <Button 
-                  className="w-full bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = plan.checkoutUrl}
-                >
-                  Iniciar teste grátis
-                </Button>
+                {plan.isAvailable ? (
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90"
+                    onClick={() => window.location.href = plan.checkoutUrl}
+                  >
+                    Iniciar teste grátis
+                  </Button>
+                ) : (
+                  <Button 
+                    className="w-full bg-gray-600 cursor-not-allowed"
+                    disabled
+                  >
+                    Em breve
+                  </Button>
+                )}
                 <div className="mt-4 text-center">
                   <Badge variant="outline" className="bg-black/50">
                     Vagas Limitadas
