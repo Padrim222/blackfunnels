@@ -1,3 +1,4 @@
+
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +10,7 @@ import { TrialButton } from "./TrialButton";
 export const FAQ = () => {
   const faqs = [
     {
-      question: "Porque funil.ai é diferente de outras plataformas?",
+      question: "Porque Blackfunnels.ai é diferente de outras plataformas?",
       answer: "Aqui acreditamos que para você ter sucesso é preciso: Conhecimento, Ferramentas, Mentalidade e Ambiente. É por isso que entregamos não só uma ótima plataforma, mas também conhecimento das principais estratégias responsáveis ​​por bilhões de dólares gerados pelos maiores players do mercado, templates prontos para usar em sua operação e uma comunidade incrível de Funileiros e Marketeiros."
     },
     {
@@ -22,7 +23,7 @@ export const FAQ = () => {
     },
     {
       question: "O que é o Desafio Funil 6-7 dígitos?",
-      answer: "Este é o primeiro treinamento desenvolvido pela Funil.ai que lhe ensinará \"o que\" e \"como\" lançar e escalar seu negócio para 6 e 7 dígitos por mês. Usando nosso método comprovado de funis e estruturas. Lançaremos seu funil juntos durante o desafio e você terá acesso imediato ao criar sua conta."
+      answer: "Este é o primeiro treinamento desenvolvido pela Blackfunnels.ai que lhe ensinará \"o que\" e \"como\" lançar e escalar seu negócio para 6 e 7 dígitos por mês. Usando nosso método comprovado de funis e estruturas. Lançaremos seu funil juntos durante o desafio e você terá acesso imediato ao criar sua conta."
     },
     {
       question: "Eu preciso pagar por updates?",
@@ -41,12 +42,12 @@ export const FAQ = () => {
       answer: "No plano mensal você pode cancelar quando quiser. Já no plano anual, você garante seu acesso por 1 ano."
     },
     {
-      question: "Se eu cancelar minha conta da funil.ai, eu perderei meus dados?",
+      question: "Se eu cancelar minha conta da Blackfunnels.ai, eu perderei meus dados?",
       answer: "Como na maioria das plataformas, quando você cancela sua conta, seus dados ficam inacessíveis, mas não se preocupe, antes de cancelar você tem a oportunidade de baixar toda a sua lista de contatos, clientes e membros."
     },
     {
       question: "Eu preciso instalar algo?",
-      answer: "Não. Na funil.ai você não precisa se preocupar com nada de tecnologia. Nós deixamos você livre para planejar sua estratégia e construir seu negócio dentro da nossa plataforma."
+      answer: "Não. Na Blackfunnels.ai você não precisa se preocupar com nada de tecnologia. Nós deixamos você livre para planejar sua estratégia e construir seu negócio dentro da nossa plataforma."
     },
     {
       question: "Existe limite de acessos em meu funil?",
@@ -54,14 +55,14 @@ export const FAQ = () => {
     },
     {
       question: "Quem é o proprietário dos dados, conteúdo e membros?",
-      answer: "Sempre você! Todo o conteúdo e os usuários são 100% seus. A funil.ai não tem permissão para usar os dados ou o conteúdo da sua conta por nenhum motivo. A funil.ai é apenas uma ferramenta para você entregar o seu valor!"
+      answer: "Sempre você! Todo o conteúdo e os usuários são 100% seus. A Blackfunnels.ai não tem permissão para usar os dados ou o conteúdo da sua conta por nenhum motivo. A Blackfunnels.ai é apenas uma ferramenta para você entregar o seu valor!"
     },
     {
       question: "Posso hospedar as minhas páginas?",
       answer: "Você está livre desse problema. Nós hospedamos tudo e mantemos todas as ferramentas atualizadas para que você possa viver em paz. Sem erros de hospedagem e sites fora do ar."
     },
     {
-      question: "E se eu não gostar da funil.ai, como eu cancelo?",
+      question: "E se eu não gostar da Blackfunnels.ai, como eu cancelo?",
       answer: "Basta acessar sua conta, clicar em Configurações -> Cobrança e depois em \"cancelar minha conta\". Você não precisa falar com ninguém, seja por e-mail, ligação ou chat, basta um clique."
     }
   ];
