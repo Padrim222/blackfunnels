@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
@@ -9,7 +10,7 @@ export const Footer = () => {
             variant="outline" 
             className="text-gray-400 hover:text-white border-gray-800 hover:border-gray-600 transition-colors"
           >
-            © 2024 Black Funnels. Todos os direitos reservados.
+            © 2025 Black Funnels. Todos os direitos reservados.
           </Button>
         </div>
       </div>
