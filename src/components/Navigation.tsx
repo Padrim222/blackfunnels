@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -58,8 +59,15 @@ export const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Login
+            <Button 
+              className="bg-[#222222] hover:bg-[#333333] text-white relative group overflow-hidden"
+              style={{
+                boxShadow: '0 0 20px rgba(14, 165, 233, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              <span className="relative z-10">Black Parceiros</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0EA5E9] to-[#1EAEDB] opacity-20 group-hover:opacity-30 transition-opacity" />
             </Button>
             <Button className="bg-primary hover:bg-primary/90 text-white">
               Iniciar 14 dias grátis
@@ -110,10 +118,14 @@ export const Navigation = () => {
             </Button>
             <div className="pt-2 space-y-2">
               <Button 
-                variant="ghost" 
-                className="w-full justify-center text-foreground hover:text-primary"
+                className="w-full bg-[#222222] hover:bg-[#333333] text-white relative group overflow-hidden"
+                style={{
+                  boxShadow: '0 0 20px rgba(14, 165, 233, 0.3)',
+                  transition: 'all 0.3s ease'
+                }}
               >
-                Login
+                <span className="relative z-10">Black Parceiros</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0EA5E9] to-[#1EAEDB] opacity-20 group-hover:opacity-30 transition-opacity" />
               </Button>
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 text-white"
