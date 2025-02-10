@@ -67,7 +67,7 @@ export const Navigation = () => {
                 boxShadow: '0 0 25px rgba(209, 70, 239, 0.5)',
                 transition: 'all 0.3s ease'
               }}
-              onClick={() => navigate('/afiliados')}
+              onClick={() => window.location.href = 'https://blackfunnels.ai/afiliados'}
             >
               <span className="relative z-10">Black Partners</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
@@ -126,7 +126,7 @@ export const Navigation = () => {
                   boxShadow: '0 0 25px rgba(209, 70, 239, 0.5)',
                   transition: 'all 0.3s ease'
                 }}
-                onClick={() => navigate('/afiliados')}
+                onClick={() => window.location.href = 'https://blackfunnels.ai/afiliados'}
               >
                 <span className="relative z-10">Black Partners</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
