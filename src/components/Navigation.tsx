@@ -62,17 +62,6 @@ export const Navigation = () => {
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <Button 
-              className="bg-black hover:bg-black/90 text-white relative group overflow-hidden"
-              style={{
-                boxShadow: '0 0 25px rgba(209, 70, 239, 0.5)',
-                transition: 'all 0.3s ease'
-              }}
-              onClick={() => window.location.href = 'https://blackfunnels.ai/afiliados'}
-            >
-              <span className="relative z-10">Black Partners</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
-            </Button>
-            <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
               onClick={() => window.location.href = 'https://app.blackfunnels.ai'}
@@ -130,17 +119,6 @@ export const Navigation = () => {
               Preços
             </Button>
             <div className="pt-2 space-y-2">
-              <Button 
-                className="w-full bg-black hover:bg-black/90 text-white relative group overflow-hidden"
-                style={{
-                  boxShadow: '0 0 25px rgba(209, 70, 239, 0.5)',
-                  transition: 'all 0.3s ease'
-                }}
-                onClick={() => window.location.href = 'https://blackfunnels.ai/afiliados'}
-              >
-                <span className="relative z-10">Black Partners</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
-              </Button>
               <Button 
                 variant="outline"
                 className="w-full border-primary text-primary hover:bg-primary hover:text-white"
