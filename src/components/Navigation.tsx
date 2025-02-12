@@ -72,8 +72,18 @@ export const Navigation = () => {
               <span className="relative z-10">Black Partners</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
             </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Iniciar 14 dias grátis
+            <Button 
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-white"
+              onClick={() => window.location.href = 'https://app.blackfunnels.ai'}
+            >
+              Login
+            </Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => window.location.href = 'https://buy.stripe.com/aEU16T3vIgjr0j6dRh'}
+            >
+              Iniciar 3 dias grátis
             </Button>
           </div>
           <div className="md:hidden flex items-center">
@@ -132,9 +142,17 @@ export const Navigation = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] opacity-20 group-hover:opacity-30 transition-opacity" />
               </Button>
               <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-white"
+                variant="outline"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                onClick={() => window.location.href = 'https://app.blackfunnels.ai'}
               >
-                Iniciar 14 dias grátis
+                Login
+              </Button>
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 text-white"
+                onClick={() => window.location.href = 'https://buy.stripe.com/aEU16T3vIgjr0j6dRh'}
+              >
+                Iniciar 3 dias grátis
               </Button>
             </div>
           </div>
