@@ -1,3 +1,4 @@
+
 import { Mail, Users, BarChart, Layout, Bot, Zap, Globe, Filter, MessageSquare, Network, PenTool, LineChart } from "lucide-react";
 import { TrialButton } from "./TrialButton";
 
@@ -5,7 +6,7 @@ const features = [
   {
     icon: Globe,
     title: "Websites",
-    description: "Crie seu website com design impecável e alta performance com o editor de sites funil.ai",
+    description: "Crie seu website com design impecável e alta performance com o editor de sites blackfunnels.ai",
     benefits: ["SEO otimizado", "Design responsivo", "Alta conversão"]
   },
   {
