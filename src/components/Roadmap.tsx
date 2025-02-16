@@ -1,3 +1,4 @@
+
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
@@ -7,7 +8,7 @@ const weeks = [
     title: "Lance seu funil principal",
     subtitle: "Fundamentos",
     items: [
-      "Masterize a Funilai",
+      "Masterize a Blackfunnels",
       "O ecossistema do funil de 7 dígitos",
       "Lance seu funil homepage",
       "Construa autoridade e credibilidade em seu nicho"
