@@ -163,7 +163,7 @@ export const Pricing = () => {
             <p className="text-white font-semibold">Oferta Limitada</p>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Garanta 14 dias grátis
+            Garanta 3 dias grátis
           </h2>
           <p className="text-xl text-primary mb-8">
             Economize mais de R$6.500,00/mês
@@ -207,7 +207,7 @@ export const Pricing = () => {
                   className="w-full mb-6 bg-primary hover:bg-primary/90"
                   onClick={() => window.location.href = plan.checkoutUrl}
                 >
-                  Iniciar teste grátis
+                  Iniciar 3 dias grátis
                 </Button>
               ) : (
                 <Button 
@@ -241,7 +241,7 @@ export const Pricing = () => {
                     className="w-full bg-primary hover:bg-primary/90"
                     onClick={() => window.location.href = plan.checkoutUrl}
                   >
-                    Iniciar teste grátis
+                    Iniciar 3 dias grátis
                   </Button>
                 ) : (
                   <Button 
