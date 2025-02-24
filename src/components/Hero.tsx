@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -36,7 +37,7 @@ export const Hero = () => {
         <p className="text-lg sm:text-xl text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto animate-slide-in">
           Foque no que você ama em vez de se preocupar com ferramentas e tecnologia. Tenha tudo que você precisa para ter sucesso online em um só lugar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
+        <div className="flex justify-center animate-fade-in" style={{ animationDelay: "200ms" }}>
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-base sm:text-lg transform transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-primary/50 focus:outline-none w-full sm:w-auto"
@@ -44,14 +45,6 @@ export const Hero = () => {
             onClick={scrollToPricing}
           >
             Começar Teste Grátis
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="text-white text-base sm:text-lg transform transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-white/50 focus:outline-none w-full sm:w-auto"
-            aria-label="Saiba Mais"
-          >
-            Saiba Mais
           </Button>
         </div>
         <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 animate-fade-in" style={{ animationDelay: "400ms" }}>
