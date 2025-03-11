@@ -1,3 +1,4 @@
+
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -64,8 +65,8 @@ export const Pricing = () => {
       originalPrice: isAnnual ? "R$497,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 912/ano)" : "",
-      highlight: "Em Breve",
-      checkoutUrl: "#",
+      highlight: "Mais Popular",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/8wM4j52vEefd97y5kK" : "https://buy.stripe.com/aEU16T3vIgjr0j6dRh",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -103,7 +104,7 @@ export const Pricing = () => {
         "Onboarding Personalizado"
       ],
       color: "border-primary",
-      isAvailable: false
+      isAvailable: true
     },
     {
       name: "MASTER",
@@ -112,8 +113,8 @@ export const Pricing = () => {
       originalPrice: isAnnual ? "R$997,00" : "",
       period: "/mês",
       savings: isAnnual ? "Cobrança anual (Economize R$ 1.860/ano)" : "Economize R$ 300/mês",
-      highlight: "Em Breve",
-      checkoutUrl: "#",
+      highlight: "Alta Performance",
+      checkoutUrl: isAnnual ? "https://buy.stripe.com/28o02P6HUefd7ZqdQZ" : "https://buy.stripe.com/28o16T3vI8QZ5RidRb",
       features: [
         "Websites Ilimitados",
         "Funis ilimitados",
@@ -151,7 +152,7 @@ export const Pricing = () => {
         "Onboarding VIP com Consultor Dedicado"
       ],
       color: "border-secondary",
-      isAvailable: false
+      isAvailable: true
     }
   ];
 
