@@ -44,9 +44,11 @@ export const Pricing = () => {
         "API"
       ],
       additionalFeatures: [
-        "+ R$0,093 por SMS",
-        "+ R$0,165/min Ligação",
-        "+ R$0,008 por email",
+        "+ R$0,093 por SMS (segmento)",
+        "+ R$0,083/min Ligações efetuadas",
+        "+ R$0,050/min Ligações recebidas",
+        "+ R$0,004/email enviado",
+        "+ R$0,004/email recebido",
         "+ R$171 Whatsapp API Oficial",
         "+ R$230 Whatsapp API não oficial (até 5 números)",
         "R$5,90 de Crédito",
@@ -92,9 +94,11 @@ export const Pricing = () => {
         "API com Suporte Prioritário"
       ],
       additionalFeatures: [
-        "+ R$0,079 por SMS",
-        "+ R$0,140/min Ligação",
-        "+ R$0,006 por email",
+        "+ R$0,079 por SMS (segmento)",
+        "+ R$0,083/min Ligações efetuadas",
+        "+ R$0,050/min Ligações recebidas",
+        "+ R$0,004/email enviado",
+        "+ R$0,004/email recebido",
         "+ R$171 Whatsapp API Oficial",
         "+ R$230 Whatsapp API não oficial (até 5 números)",
         "R$29,50 de Crédito",
@@ -140,9 +144,11 @@ export const Pricing = () => {
         "API Dedicada"
       ],
       additionalFeatures: [
-        "+ R$0,070 por SMS",
-        "+ R$0,124/min Ligação",
-        "+ R$0,006 por email",
+        "+ R$0,070 por SMS (segmento)",
+        "+ R$0,083/min Ligações efetuadas",
+        "+ R$0,050/min Ligações recebidas",
+        "+ R$0,004/email enviado",
+        "+ R$0,004/email recebido",
         "+ R$171 Whatsapp API Oficial",
         "+ R$230 Whatsapp API não oficial (até 5 números)",
         "R$59 de Crédito",
