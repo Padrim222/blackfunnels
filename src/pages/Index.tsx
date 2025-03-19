@@ -1,8 +1,8 @@
+
 import { Navigation } from "@/components/Navigation";
 import { AffiliateBar } from "@/components/AffiliateBar";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
-import { Experts } from "@/components/Experts";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
@@ -50,9 +50,6 @@ const Index = () => {
       </div>
       <div className="pattern-diagonal scroll-animation">
         <Results />
-      </div>
-      <div className="pattern-waves scroll-animation">
-        <Experts />
       </div>
       <div className="pattern-grid scroll-animation">
         <Integration />
